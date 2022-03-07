@@ -1,0 +1,25 @@
+{
+	"livein": ["invec", "n", "forward"],
+	"liveout": ["outvec"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/gregfjohnson_fft/exec",
+	"funname": "recFFT_wrapper",
+	"funargs": ["outvec", "invec", "n", "forward"],
+	"typemap": {
+		"invec": "array(_complex_double_)",
+		"outvec": "array(_complex_double_)",
+		"n": "uint32",
+		"forward": "bool"
+	},
+	"required_includes": ["../../benchmarks/Github/code/gregfjohnson_fft/self_contained_code.c"],
+	"classmap": {
+		"_complex_double_": {
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float64",
+				"im": "float64"
+			}
+		}
+	}
+}

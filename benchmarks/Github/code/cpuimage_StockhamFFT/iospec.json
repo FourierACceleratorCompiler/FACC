@@ -1,0 +1,22 @@
+{
+	"livein": ["x", "n"],
+	"liveout": ["x"],
+	"execcmd": "../benchmarks/Github/code/cpuimage_StockhamFFT/exec",
+	"funname": "fft",
+	"funargs": ["x", "n"],
+	"typemap": {
+		"x": "array(complex_t)",
+		"n": "int32"
+	},
+	"required_includes": ["../../benchmarks/Github/code/cpuimage_StockhamFFT/self_contained_code.c"],
+	"classmap": {
+		"complex_t": {
+			"type": "struct",
+			"symbols": ["real", "imag"],
+			"typemap": {
+				"real": "float32",
+				"imag": "float32"
+			}
+		}
+	}
+}

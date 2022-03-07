@@ -1,0 +1,5 @@
+SUBSTITUTE:float complex:float _Complex: # this stuff is because we are using a C++ wrapper, so have to convert the code from using C99 to whatever version of C the C++ compiler externs to
+INSERT: #include "self_contained_code.h"
+fft.h: 4,5 # includes
+fft-dit.c: 2,97 # fft def
+INSERT: int fft_wrapper (_float_complex_ *vector, long int N) { return fft((float complex *) vector, (size_t) N); } // Unwrap types into the types FACC can handle. (Compiler would do this. )

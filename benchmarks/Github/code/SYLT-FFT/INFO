@@ -1,0 +1,5 @@
+Source: https://github.com/stg/SYLT-FFT 
+Commit: c6f58ca
+License: MHG License
+MainFile: main.c
+FFTFunction: fft.h:fft_forward

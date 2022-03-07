@@ -1,0 +1,6 @@
+Source: https://github.com/adafruit/Adafruit_ZeroFFT
+Commit: c789264
+License: BSD-3
+MainFile: None
+FFTFunction: fftutil.c:ZeroFFT
+Notes: Integer FFT.  May struggle with speedup/accuracy.

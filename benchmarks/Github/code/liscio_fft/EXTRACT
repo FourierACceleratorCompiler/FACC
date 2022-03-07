@@ -1,0 +1,5 @@
+INSERT:     #define M_PI 3.14159265358979323846
+INSERT: #include "self_contained_code.h" // Lots of lines inserted in this extraction to get extra dependencies etc in the right places.
+fft_straightforward.c: 2,54 # include the fft definition
+INSERT: struct _complex_double_;
+INSERT: _complex_double_ *FFT_wrapper (_complex_double_ *x, int N) { return (_complex_double_*) FFT((complex double *) x, N); } // # We need to add this since FACC can't see into the internals of the compiler, so it casts the C++ complex double type to its own internal type.

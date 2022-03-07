@@ -1,0 +1,24 @@
+cpu.c: 117,120 # cpuflags function
+fft_internal.h: 38,38
+fft_internal.h: 41,44 # complex
+fft_internal.h: 47,53 # complex def
+fft_internal.h: 55,59 # complex builder
+fft_internal.h: 117,117 # fft def
+fft_internal.h: 181,193 # constan defs
+fft.c: 21,24 # includes
+fft.h: 26,26 # includes
+fft.h: 32,32 # restrict def
+fft.h: 44,65 # flags
+fft_internal.h: 109,109 #  funcdef
+fft.h: 131,150 # more flags
+fft.c: 36,42 # struct def
+fft.c: 53,66 # more struct defs
+fft.c: 101,134 # twiddles
+fft.c: 136,152 # more structs
+fft.c: 217,256 # helper structs
+fft.c: 289,379 # building plan calls
+fft.c: 1032,1085 # calloc/alloc/free
+fft.c: 991,1002 # fee structs
+fft.c: 626,662 # building plan.
+fft.c: 811,850 # actual FFT.
+../wrapper.c: 1,1000 # wrapper to avoid unsupported features and allow profiling

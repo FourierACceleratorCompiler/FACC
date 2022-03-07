@@ -1,0 +1,19 @@
+{
+	"livein": ["input", "twiddle_factors", "n"],
+	"liveout": ["output"],
+	"execcmd": "../benchmarks/Github/code/fakufaku_esp32/exec",
+	"funname": "fft",
+	"funargs": ["input", "output", "twiddle_factors", "n"],
+	"typemap": {
+		"input": "array(float32)",
+		"output": "array(float32)",
+		"twiddle_factors": "array(float32)",
+		"n": "int32"
+	},
+	"required_includes": ["../../benchmarks/Github/code/fakufaku_esp32-fft/self_contained_code.c"]
+	"range": {
+		"n": "1024"
+		"TOFILL": "twiddle factors"
+	},
+	"classmap": {}
+}

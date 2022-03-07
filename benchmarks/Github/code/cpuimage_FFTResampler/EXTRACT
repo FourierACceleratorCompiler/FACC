@@ -1,0 +1,8 @@
+stb_fft.h: 26,61 # includes and typedef
+stb_fft.h: 91,149 # some defines
+stb_fft.h: 151,246 # calculating stages
+stb_fft.h: 285,321 # plan def
+stb_fft.h: 347,1676 # the actual FFT algorithm
+stb_fft.h: 1678,1721 # the stub fft calling function
+stb_fft.h: 1769,1781 # execution
+stb_fft.h: 1836,1847 # fft function

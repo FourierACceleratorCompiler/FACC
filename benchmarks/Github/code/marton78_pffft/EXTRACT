@@ -1,0 +1,16 @@
+pffft.c: 70,74 # incluces
+pffft.h: 90,90 # opaque def
+pffft.h: 96,99 # enum defs
+pffft.h: 109,109 # destroy def
+pffft_common.c: 8,53 # memdefs
+pffft.c: 77,80 # various defs
+simd/pf_float.h: 60,60 # varioud math defs
+simd/pf_float.h: 66,71 # varioud math defs
+simd/pf_float.h: 76,81 # various math defs
+simd/pf_sse1_float.h: 39,79 # math defs
+simd/pf_neon_float.h: 39,84 # math defs
+simd/pf_altivec_float.h: 39,78 # math defs
+simd/pf_scalar_float.h: 41,181 # math defs
+pffft.c: 101,129 # function name defs
+pffft_priv_impl.h: 63,1814 # fft def
+../desugar.c: 1,2000 # desugaring wrapper

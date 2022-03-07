@@ -1,0 +1,31 @@
+{
+	"livein": ["data", "factor", "num", "series"],
+	"liveout": ["data"],
+	"execcmd": "../benchmarks/Github/code/SproutOrc_MSP430FFT/exec",
+	"funname": "FFT",
+	"funargs": ["data", "factor", "num", "series"],
+	"typemap": {
+		"data": "array(Complex#128)",
+		"factor": "array(Complex#128)",
+		"num": "int32",
+		"series": "int32"
+	},
+	"range": {
+		"num": "set(128)",
+		"series": "set(7)"
+	},
+	"value_profiles": [
+		"../benchmarks/Github/code/SproutOrc_MSP430FFT/twiddle_factor_profile.json"
+	],
+	"required_includes": ["../../benchmarks/Github/code/SproutOrc_MSP430FFT/self_contained_code.c"],
+	"classmap": {
+		"Complex": {
+			"type": "struct",
+			"symbols": ["real", "imag"],
+			"typemap": {
+				"real": "float32",
+				"imag": "float32"
+			}
+		}
+	}
+}

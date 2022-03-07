@@ -1,0 +1,10 @@
+*.swp
+__pycache__
+*.pyc
+pretrain_models/
+pretrain_output
+training_output
+training_output_norm
+fft_data/*.c
+models/
+output

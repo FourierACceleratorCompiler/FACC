@@ -1,0 +1,5 @@
+complex.c: 2,2 # include math
+fft.c: 2,2 # include stdlib
+complex.h: 2,6 # complex type def
+complex.c: 4,24 # complex helper functions
+fft.c: 3,147 # dft implementation

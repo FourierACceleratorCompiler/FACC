@@ -1,0 +1,13 @@
+SUBSTITUTE:2i:2 * _Complex_I
+SUBSTITUTE:complex :_g_complex :
+SUBSTITUTE:(complex):(_g_complex):
+INSERT: #define M_PIl M_PI // So this is a hack since I can't get this building since M_PIl seems to be missing.
+complex.h: 7,9 # includes
+complex.c: 5,11 # includes
+INSERT: #define complex _Complex double // should be in complex.h but is for some reason missing
+complex.c: 15,21 # verbose 
+primes.h: 8,132 # primes
+complex.c: 83,88 # prime factor
+complex.c: 90,150 #fft def
+INSERT: #include "self_contained_code.h"
+INSERT: int FFT_wrapper (_complex_double_ *invec, _complex_double_ *outvec, unsigned int n, bool forward) { return (int) FFT((complex *) invec, (complex *) outvec, n, forward); } // # We need to add this since FACC can't see into the internals of the compiler, so it casts t he C++ complex double type to its own internal type.

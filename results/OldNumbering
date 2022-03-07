@@ -1,0 +1,17 @@
+This is the numbering from a previous edition -- kept around in case we find something that wasn't updated where the old numbers are required (unlikely --- only used in the paper, not at all in this repo.  )
+tasimon_FFT: 0
+mozanunal_SimpleDSP: 1
+marton78_pffft: 2
+mborgerding_kissfft: 3
+dlinyj_fft: 4
+JodiTheTigger_meow_fft: 5
+cpuimage_StockhamFFT: 6
+akw0088_fft: 7
+cpuimage_FFTResampler: 8
+xiahouzouxin_fft: 9
+cpuimage_cpuFFT: 10
+xbarin02_uFFT: 11
+xbarin02_uFFT_2: 12
+gregfjohnson_fft: 13
+liscio_fft: 14
+jtfell_c-fft: 15

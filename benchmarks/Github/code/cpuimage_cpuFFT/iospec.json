@@ -1,0 +1,24 @@
+{
+	"livein": ["input", "n"],
+	"liveout": ["output"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/cpuimage_cpuFFT/exec",
+	"funname": "FFT",
+	"funargs": ["input", "output", "n"],
+	"typemap": {
+		"input": "array(cmplx)",
+		"output": "array(cmplx)",
+		"n": "int32"
+	},
+	"required_includes": ["../../benchmarks/Github/code/cpuimage_cpuFFT/self_contained_code.c"],
+	"classmap": {
+		"cmplx": {
+			"type": "struct",
+			"symbols": ["real", "imag"],
+			"typemap": {
+				"real": "float32",
+				"imag": "float32"
+			}
+		}
+	}
+}

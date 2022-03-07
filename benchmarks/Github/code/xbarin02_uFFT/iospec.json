@@ -1,0 +1,30 @@
+{
+	"livein": ["vector", "N"],
+	"liveout": ["vector"],
+	"returnvarname": ["returnv"],
+	"execcmd": "../benchmarks/Github/code/xbarin02_uFFT/exec",
+	"compiler_flags": ["-fpermissive"],
+	"compiler_command": "g++",
+	"funname": "fft_wrapper",
+	"funargs": ["vector", "N"],
+	"typemap": {
+		"vector": "array(_float_complex_)",
+		"N": "int64",
+		"returnv": "int32"
+	},
+	"notes": "Consts are the possible values this can take (form simple static analysis) of the code",
+	"consts": {
+		"returnv": "set(-1, 0, 1)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c"],
+	"classmap": {
+		"_float_complex_": {
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float32",
+				"im": "float32"
+			}
+		}
+	}
+}

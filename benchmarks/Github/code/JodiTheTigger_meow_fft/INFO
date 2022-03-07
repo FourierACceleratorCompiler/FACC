@@ -1,0 +1,7 @@
+Source: https://github.com/JodiTheTigger/meow_fft
+Commit: 6047282
+License: BSD-0
+MainFile: None
+FFTFunction: meow_fft.h:meow_fft
+Notes: Seems buggy. Cannot get this to work following instructions on github.
+FunctionLine: 919

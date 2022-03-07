@@ -1,0 +1,6 @@
+Source: https://github.com/biotrump/OouraFFT/
+Commit: c6fd2dd6d21397baa6653139d31d84540d5449a2
+License: None
+MainFile: None
+FFTFucntion: fftsg_h.c
+Algorithm: Split-Radix DIF

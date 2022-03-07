@@ -1,0 +1,26 @@
+{
+	"livein": ["x", "N", "N1", "N2"],
+	"liveout": [],
+	"returnvarname": ["returnv"],
+	"execcmd": "../benchmarks/Github/code/jtfell_c-fft_3/exec",
+	"funname": "FFT_CooleyTukey",
+	"funargs": ["x", "N", "N1", "N2"],
+	"typemap": {
+		"x": "array(complex)",
+		"N": "int32",
+		"N1": "int32",
+		"N2": "int32",
+		"returnv": "array(complex)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/jtfell_c-fft_3/self_contained_code.c"],
+	"classmap": {
+		"complex": {
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float64",
+				"im": "float64"
+			}
+		}
+	}
+}

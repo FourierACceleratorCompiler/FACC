@@ -1,0 +1,32 @@
+{
+	"livein": ["ca"],
+	"liveout": [],
+	"returnvarname": ["returnv"],
+	"execcmd": "../benchmarks/Github/code/kappalabs_fft_band_equalizer/exec",
+	"funname": "recFFT",
+	"funargs": ["ca"],
+	"typemap": {
+		"ca": "C_ARRAY",
+		"returnv": "C_ARRAY"
+	},
+	"required_includes": ["../../benchmarks/Github/code/kappalabs_fft_band_equalizer/self_contained_code.c"],
+	"classmap": {
+		"C_ARRAY": {
+			"type": "struct",
+			"symbols": ["c", "len", "max"],
+			"typemap": {
+				"len": "int32",
+				"max": "int32",
+				"c": "array(COMPLEX)"
+			}
+		},
+		"COMPLEX": {
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float64",
+				"im": "float64"
+			}
+		}
+	}
+}

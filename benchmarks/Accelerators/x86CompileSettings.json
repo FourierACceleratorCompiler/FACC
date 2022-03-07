@@ -1,0 +1,5 @@
+{
+	"target": "C++",
+	"allocation_mode": "Stack",
+	"notes": "Stack is likely the most flexible and efficient allocation mode for any not-very-small FFTs"
+}

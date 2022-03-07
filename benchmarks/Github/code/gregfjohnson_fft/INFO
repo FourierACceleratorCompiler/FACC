@@ -1,0 +1,7 @@
+Source: https://github.com/gregfjohnson/fft
+Commit: dc8a8ddcb3931b2ee176f44b8cea27f69759624b
+License: (Bespoke, see LICENSE.txt)
+MainFile: GPLv2
+FFTFucntion: complex.c:recFFT
+Notes: I'm a bit surprised that this is working, it seems to produce forward behaviour regardless of the input value.  Anyway, it is producing behaviourally equivalent wrappers as-is, although there might be a bug (that should trigger the conversion generator to produce equally working code).
+FunctionLine: 152

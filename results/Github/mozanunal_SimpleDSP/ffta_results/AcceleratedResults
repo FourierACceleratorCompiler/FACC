@@ -1,0 +1,24 @@
+Starting runs for size 64:
+Time: 0.000082736000
+AccTime: 0.000059706000
+Runs finished for size 64
+Starting runs for size 128:
+Time: 0.000141392000
+AccTime: 0.000000000000
+Runs finished for size 128
+Starting runs for size 256:
+Time: 0.000346356000
+AccTime: 0.000000000000
+Runs finished for size 256
+Starting runs for size 64:
+Time: 0.000084352000
+AccTime: 0.000058240000
+Runs finished for size 64
+Starting runs for size 128:
+Time: 0.000142136000
+AccTime: 0.000000000000
+Runs finished for size 128
+Starting runs for size 256:
+Time: 0.000372868000
+AccTime: 0.000000000000
+Runs finished for size 256

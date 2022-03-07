@@ -1,0 +1,7 @@
+Source: https://github.com/mborgerding/kissfft
+Commit: 5c708d8
+License: BSD-3-Clause/Unlicense
+MainFile: kfc.c
+FFTFunction: kfc.c:kfc_fft
+Algorithm: FFT with DSP base-case
+FunctionLine: 535

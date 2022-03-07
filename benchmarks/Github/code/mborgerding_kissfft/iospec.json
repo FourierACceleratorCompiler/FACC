@@ -1,0 +1,23 @@
+{
+	"livein": ["nfft", "fin"],
+	"liveout": ["fout"],
+	"execcmd": "../benchmarks/Github/code/mborgerding_kissfft/exec",
+	"funname": "kfc_fft",
+	"funargs": ["nfft", "fin", "fout"],
+	"typemap": {
+		"nfft": "int32",
+		"fin": "array(kiss_fft_cpx)",
+		"fout": "array(kiss_fft_cpx)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/mborgerding_kissfft/self_contained_code.c"],
+	"classmap": {
+		"kiss_fft_cpx": {
+			"type": "struct",
+			"symbols": ["r", "i"],
+			"typemap": {
+				"r": "float32",
+				"i": "float32"
+			}
+		}
+	}
+}

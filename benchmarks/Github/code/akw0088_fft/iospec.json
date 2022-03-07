@@ -1,0 +1,24 @@
+{
+	"livein": ["num", "x", "w"],
+	"liveout": ["x"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/akw0088_fft/exec",
+	"funname": "fft_c",
+	"funargs": ["num", "x", "w"],
+	"typemap": {
+		"x": "array(j_complex_t)",
+		"w": "array(j_complex_t)",
+		"num": "int32"
+	},
+	"required_includes": ["../../benchmarks/Github/code/akw0088_fft/self_contained_code.c"],
+	"classmap": {
+		"j_complex_t": {
+			"type": "struct",
+			"symbols": ["real", "imag"],
+			"typemap": {
+				"real": "float32",
+				"imag": "float32"
+			}
+		}
+	}
+}

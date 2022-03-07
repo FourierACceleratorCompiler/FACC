@@ -1,0 +1,26 @@
+{
+	"livein": ["fft", "re", "im"],
+	"liveout": ["re", "im"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/983_fft/exec",
+	"funname": "fft_fft",
+	"funargs": ["fft", "re", "im"],
+	"typemap": {
+		"fft": "pointer(struct_FFT)",
+		"re": "array(float32)",
+		"im": "array(float32)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/983_fft/self_contained_code.c"],
+	"classmap": {
+		"struct_FFT": {
+			"type": "struct",
+			"symbols": ["n", "reversed", "c", "s"],
+			"typemap": {
+				"n": "int32",
+				"reversed": "array(int32)",
+				"c": "array(float32)",
+				"s": "array(float32)"
+			}
+		}
+	}
+}

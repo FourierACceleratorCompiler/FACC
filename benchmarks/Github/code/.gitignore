@@ -1,0 +1,5 @@
+*/code/
+*/exec
+**/*.c.ll
+**/*.c.json
+**/*.ll

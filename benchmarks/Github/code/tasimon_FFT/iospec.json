@@ -1,0 +1,14 @@
+{
+	"livein": ["Z"],
+	"liveout": ["Z"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/tasimon_FFT/exec",
+	"funname": "fft64",
+	"funargs": ["Z"],
+	"typemap": {
+		"Z": "array(float32#128)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/tasimon_FFT/self_contained_code.c"],
+	"classmap": {
+	}
+}

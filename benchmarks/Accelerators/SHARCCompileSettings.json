@@ -1,0 +1,5 @@
+{
+	"target": "C++",
+	"allocation_mode": "Static",
+	"notes": "CCES does not allow alignment of stack values, so needs to be either heap or static."
+}

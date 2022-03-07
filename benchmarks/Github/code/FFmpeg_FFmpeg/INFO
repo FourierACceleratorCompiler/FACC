@@ -1,0 +1,6 @@
+Source: https://github.com/FFmpeg/FFmpeg
+Commit: 5d06d26
+License: Mostly GPL v2.1, some MIT/X11/BSD
+MainFile: None
+FFTFunction: libavcodec/fft_template.c:fft##n
+Notes: Function needs to be expanded out through preprocessor.

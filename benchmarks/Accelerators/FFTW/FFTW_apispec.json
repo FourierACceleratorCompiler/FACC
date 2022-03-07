@@ -1,0 +1,31 @@
+{
+	"livein":["api_in", "interface_len", "dir"],
+	"liveout": ["api_out"],
+	"functionargs": ["api_in", "api_out", "interface_len", "dir"],
+	"execcmd": "../../../benchmarks/Accelerators/FFTW/FFTW",
+	"functionname": "fftwf_example_api",
+	"typemap": {
+		"api_in": "array(_complex_float_#interface_len)",
+		"api_out": "array(_complex_float_#interface_len)",
+		"dir": "int16",
+		"interface_len": "int32"
+	},
+	"required_includes": ["../../benchmarks/Accelerators/FFTW/interface.hpp", "complex"],
+	"valid": {
+		"dir": "set(-1, 1)",
+		"interface_len": "set(power_of_two(1, 20))"
+	},
+	"compiler_flags": ["-lfftw3", "-lfftw3f"],
+	"classmap": {
+		"_complex_float_": {
+			"notes": "Internal compiler representation of std::complex<double>",
+			"type": "class",
+			"symbols": ["re", "im"],
+			"functions": [],
+			"typemap": {
+				"re": "float32",
+				"im": "float32"
+			}
+		}
+	}
+}

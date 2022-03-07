@@ -1,0 +1,26 @@
+{
+	"livein": ["X", "M"],
+	"liveout": ["X"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/joaodias_DSP-Digital-Signal-Processing/exec",
+	"funname": "fft",
+	"funargs": ["X", "M"],
+	"typemap": {
+		"X": "array(j_complex_t)",
+		"M": "int32"
+	},
+	"range": {
+		"M": "set(range(1,15))"
+	},
+	"required_includes": ["../../benchmarks/Github/code/joaodias_DSP-Digital-Signal-Processing/self_contained_code.c"],
+	"classmap": {
+		"j_complex_t": {
+			"type": "struct",
+			"symbols": ["real", "imag"],
+			"typemap": {
+				"real": "float32",
+				"imag": "float32"
+			}
+		}
+	}
+}

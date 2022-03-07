@@ -1,0 +1,25 @@
+{
+	"livein": ["x", "N"],
+	"liveout": [],
+	"returnvarname": ["returnvar"],
+	"execcmd": "../benchmarks/Github/code/liscio_fft/exec",
+	"funname": "FFT_wrapper",
+	"funargs": ["x", "N"],
+	"typemap": {
+		"x": "array(_complex_double_)",
+		"returnvar": "array(_complex_double_)",
+		"N": "int32"
+	},
+	"required_includes": ["../../benchmarks/Github/code/liscio_fft/self_contained_code.h"],
+	"compiler_flags": ["../benchmarks/Github/code/liscio_fft/self_contained_code.o"],
+	"classmap": {
+		"_complex_double_": {
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float64",
+				"im": "float64"
+			}
+		}
+	}
+}

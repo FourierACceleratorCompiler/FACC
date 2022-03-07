@@ -1,0 +1,32 @@
+{
+	"livein":["power_quad_acc_input", "power_quad_acc_n"],
+	"liveout": ["power_quad_acc_output"],
+	"functionargs": ["power_quad_acc_input", "power_quad_acc_output", "power_quad_acc_n"],
+	"functionname": "fft_api",
+	"typemap": {
+		"power_quad_acc_input": "array(complex_type#power_quad_acc_n)",
+		"power_quad_acc_output": "array(complex_type#power_quad_acc_n)",
+		"power_quad_acc_n": "int32"
+	},
+	"required_includes": ["../../benchmarks/Accelerators/PowerQuad/powerquad_emulation.c"],
+	"valid": {
+		"power_quad_acc_n": "set(power_of_two(6, 12))"
+	},
+	"compiler_flags": ["-lfftw3", "-lfftw3f"],
+	"classmap": {
+		"complex_type": {
+			"notes": "ADI-defined class",
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float32",
+				"im": "float32"
+			}
+		}
+	},
+	"alignment": {
+		"power_quad_acc_input": 64,
+		"power_quad_acc_output": 64
+	},
+	"allocation_mode": "Static"
+}

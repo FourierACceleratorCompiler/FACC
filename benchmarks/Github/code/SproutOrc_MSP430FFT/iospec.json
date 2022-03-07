@@ -1,0 +1,24 @@
+{
+	"livein": ["data", "factor", "num", "series"],
+	"liveout": ["data"],
+	"execcmd": "../benchmarks/Github/code/SproutOrc_MSP430FFT/exec",
+	"funname": "FFT",
+	"funargs": ["data", "factor", "num", "series"],
+	"typemap": {
+		"data": "array(Complex)",
+		"factor": "array(Complex)",
+		"num": "int32",
+		"series": "int32"
+	},
+	"required_includes": ["../../benchmarks/Github/code/SproutOrc_MSP430FFT/self_contained_code.c"],
+	"classmap": {
+		"Complex": {
+			"type": "struct",
+			"symbols": ["real", "imag"],
+			"typemap": {
+				"real": "float32",
+				"imag": "float32"
+			}
+		}
+	}
+}

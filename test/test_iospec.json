@@ -1,0 +1,8 @@
+{ "livein":["cpx", "len"],
+	"liveout": ["cpx"],
+	"execcmd": "../test/interface",
+	"funname": "fft_accel",
+	"typemap": { "len": "int16",
+		"cpx": "array(Complex)"},
+	"required_includes": ["../../test/cmplx.hpp"]
+}

@@ -1,0 +1,5 @@
+Steps:
+
+	1. pip install -r requirements
+	2. python pretrain.py (gets the data)
+	3. python train.py 0

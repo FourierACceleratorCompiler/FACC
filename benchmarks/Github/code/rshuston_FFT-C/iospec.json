@@ -1,0 +1,24 @@
+{
+	"livein": ["data", "log2_N", "direction"],
+	"liveout": ["data"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/rshuston_FFT-C/exec",
+	"funname": "ffti_evaluate_f",
+	"funargs": ["data", "log2_N", "direction"],
+	"typemap": {
+		"data": "array(complex_f)",
+		"log2_N": "int32",
+		"direction": "int32"
+	},
+	"required_includes": ["../../benchmarks/Github/code/rshuston_FFT-C/self_contained_code.c"],
+	"classmap": {
+		"complex_f": {
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float32",
+				"im": "float32"
+			}
+		}
+	}
+}

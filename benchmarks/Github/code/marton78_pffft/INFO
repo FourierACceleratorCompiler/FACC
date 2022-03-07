@@ -1,0 +1,7 @@
+Source: https://github.com/marton78/pffft
+Commit: 48de74aa012ff8ad66f2f2240f54f72a82931555
+License: (Bespoke, see LICENSE.txt)
+MainFile: None
+FFTFucntion: pffft_priv_impl.h:pffft_transform_ordered
+Notes: different typemaps for different targets, so need different iospecs for each one (uses platform-specific vectorization).  This also uses enums, which are just sugar removed by the compiler, so we provide a wrapper to get around that sugar.
+FunctionLine: 2122

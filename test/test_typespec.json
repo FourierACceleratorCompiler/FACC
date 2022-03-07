@@ -1,0 +1,43 @@
+{
+	"complex<double>": {
+		"notes": "C++ style complex. ",
+		"type": "class",
+		"symbols": ["re", "im"],
+		"functions": [],
+		"typemap": {
+			"re": "float64",
+			"im": "float64"
+		}
+	},
+
+	"complex<float>": {
+		"notes": "C++ sytle complex specialized for floats. ",
+		"type": "class",
+		"symbols": ["re", "im"],
+		"functions": [],
+		"typemap": {
+			"re": "float32",
+			"im": "float32"
+		}
+	},
+
+	"complex_double_": {
+		"notes": "a double complex",
+		"type": "class",
+		"symbols": ["re", "im"],
+		"functions": [],
+		"typemap": {
+			"re": "float64",
+			"im": "float64"
+		}
+	},
+
+	"Complex": {
+		"type": "struct",
+		"symbols": ["re", "im"],
+		"typemap": {
+			"re": "float32",
+			"im": "float32"
+		}
+	}
+}

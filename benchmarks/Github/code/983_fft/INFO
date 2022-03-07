@@ -1,0 +1,5 @@
+Source: https://github.com/983/fft
+Commit: f902295ba1fa2473bbfbc942975cd873f7aa2578
+License: Public Domain
+MainFile: None
+FFTFucntion: fft.c:fft_fft

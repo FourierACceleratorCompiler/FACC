@@ -1,0 +1,7 @@
+Source: https://github.com/xiahouzuoxin/fft
+Commit: 8e6c372
+License: None
+MainFile: main.c
+FFTFunction: zx_fft.c:fft
+Algorithm: Radix-2 FFT
+FunctionLine: 44

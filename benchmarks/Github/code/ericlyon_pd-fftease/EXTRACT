@@ -1,0 +1,6 @@
+INSERT: #define t_float float
+fftease.h: 3,7 # includes
+INSERT: #define TWOPI 2.0 * M_PI // don't know where this was meant to come from
+SUBSTITUTE:void fftease_bitreverse(): : # flip the order of delcarations to avoid tis, which does't like being externed from C++ 
+fft.c: 139,159 # impl
+fft.c: 84,139 # impl

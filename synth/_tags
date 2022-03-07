@@ -1,0 +1,16 @@
+<skeleton>: include
+<backend>: include
+<builtin>: include
+<expand_types>:include
+<spec>: include
+<gir>: include
+<behavioural_synthesizers>: include
+<behavioural_synthesizers/**/*>: include
+<json>: include
+<parsers/**/*>: include
+<range>: include
+<range_checker>: include
+<skeleton>: include
+<utilities>: include
+<tests/**/*>: include
+<program>: include

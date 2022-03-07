@@ -1,0 +1,4 @@
+fft.h: 4,7 # defs
+INSERT: typedef struct FFT struct_FFT;
+SUBSTITUTE:struct FFT:struct_FFT
+fft.c: 3,121 # fft impl

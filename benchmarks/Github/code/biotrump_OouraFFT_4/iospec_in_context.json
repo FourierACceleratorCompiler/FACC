@@ -1,0 +1,37 @@
+{
+	"livein": ["n", "isgn", "a"],
+	"liveout": ["a"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/biotrump_OouraFFT_4/exec",
+	"funname": "cdft",
+	"funargs": ["n", "isgn", "a"],
+	"typemap": {
+		"n": "int32",
+		"isgn": "int32",
+		"a": "array(float64)"
+	},
+	"value_profiles": [
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/2.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/4.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/8.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/16.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/32.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/64.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/128.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/256.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/512.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/1024.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/2048.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/4096.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/8192.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/16384.json",
+		"../results/Github/biotrump_OouraFFT_4/value_profiles/32768.json"
+	],
+	"range": {
+		"n": "set(5, 9, 17, 33, 65, 129, 257, 513, 1025, 2049, 4097, 8193)",
+		"isgn": "set(0, 1)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/biotrump_OouraFFT_4/self_contained_code.c"],
+	"classmap": {
+	}
+}

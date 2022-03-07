@@ -1,0 +1,5 @@
+{
+	"target": "C++",
+	"allocation_mode": "Stack",
+	"notes": "ArmCC is actually C, but pretty sure the C backend is broken, so let's just use C++, which is exactly the same.  Also pretty sure that this file doesn't really control the target."
+}

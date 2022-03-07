@@ -1,0 +1,35 @@
+{
+	"livein": ["num", "x", "w"],
+	"liveout": ["x"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/akw0088_fft/exec",
+	"funname": "fft_c",
+	"funargs": ["num", "x", "w"],
+	"typemap": {
+		"x": "array(j_complex_t)",
+		"w": "array(j_complex_t)",
+		"num": "int32"
+	},
+	"value_profiles": [
+		"../results/Github/akw0088_fft/value_profiles/1024.json",
+		"../results/Github/akw0088_fft/value_profiles/512.json",
+		"../results/Github/akw0088_fft/value_profiles/256.json",
+		"../results/Github/akw0088_fft/value_profiles/128.json",
+		"../results/Github/akw0088_fft/value_profiles/64.json",
+		"../results/Github/akw0088_fft/value_profiles/32.json",
+		"../results/Github/akw0088_fft/value_profiles/2048.json",
+		"../results/Github/akw0088_fft/value_profiles/4096.json",
+		"../results/Github/akw0088_fft/value_profiles/8192.json"
+	],
+	"required_includes": ["../../benchmarks/Github/code/akw0088_fft/self_contained_code.c"],
+	"classmap": {
+		"j_complex_t": {
+			"type": "struct",
+			"symbols": ["real", "imag"],
+			"typemap": {
+				"real": "float32",
+				"imag": "float32"
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"livein": ["setup", "input", "work", "direction"],
+	"liveout": ["output"],
+	"execcmd": "../benchmarks/Github/code/marton78_pffft/exec",
+	"funname": "desugared_transform_ordered",
+	"funargs": ["setup", "input", "output", "work", "direction"],
+	"typemap": {
+		"setup": "pointer(PFFFT_Setup_Desugar)",
+		"input": "array(float32#setup.N)",
+		"output": "array(float32#setup.N)",
+		"work": "array(float32#setup.N)",
+		"direction": "int32"
+	},
+	"range": {
+		"direction": "set(0, 1)",
+		"setup.N": "set(32, 64, 128, 256, 512, 1024, 2048, 4096)",
+		"setup.Ncvec": "set(32, 64, 128, 256, 512, 1024, 2048, 4096)"
+	},
+	"value_profiles": [
+		"../results/Github/marton78_pffft/value_profiles/32.json",
+		"../results/Github/marton78_pffft/value_profiles/64.json",
+		"../results/Github/marton78_pffft/value_profiles/128.json",
+		"../results/Github/marton78_pffft/value_profiles/256.json",
+		"../results/Github/marton78_pffft/value_profiles/512.json",
+		"../results/Github/marton78_pffft/value_profiles/1024.json",
+		"../results/Github/marton78_pffft/value_profiles/2048.json",
+		"../results/Github/marton78_pffft/value_profiles/4096.json"
+	],
+	"required_includes": ["../../benchmarks/Github/code/marton78_pffft/self_contained_code.c"],
+	"classmap": {
+		"PFFFT_Setup_Desugar": {
+			"type": "struct",
+			"symbols": ["N", "Ncvec",
+				"ifac",
+				"transform",
+				"data",
+				"e",
+				"twiddle"],
+			"typemap": {
+				"N": "int32",
+				"Ncvec": "int32",
+				"ifac": "array(int32#15)",
+				"transform": "int32",
+				"data": "array(float32#N)",
+				"e": "array(float32#N)",
+				"twiddle": "array(float32#N)"
+			},
+			"range": {
+				"transform": "set(0, 1)",
+				"N": "set(32, 64, 128, 256, 512, 1024, 2048, 4096)",
+				"Ncvec": "set(32, 64, 128, 256, 512, 1024, 2048, 4096)"
+			}
+		}
+	}
+}

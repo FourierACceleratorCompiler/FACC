@@ -1,0 +1,27 @@
+{
+	"livein":["in", "n"],
+	"liveout": ["out"],
+	"funargs": ["in", "out", "n"],
+	"execcmd": "../benchmarks/Testing/exec",
+	"funname": "i_fftwf_example_api",
+	"typemap": {
+		"in": "array(float32)",
+		"out": "array(float32)",
+		"n": "int32"
+	},
+	"required_includes": ["../../benchmarks/Testing/interface.hpp", "../../benchmarks/Testing/types.h"],
+	"range": {
+		"n": "set(4,8,16,32,64,128,256,512,1024)"
+	},
+	"compiler_flags": ["-lfftw3", "-lfftw3f"],
+	"classmap": {
+		"complex_float": {
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float32",
+				"im": "float32"
+			}
+		}
+	}
+}

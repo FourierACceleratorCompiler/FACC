@@ -1,0 +1,33 @@
+{
+	"livein":["adi_acc_input", "adi_acc_n"],
+	"liveout": ["adi_acc_output"],
+	"functionargs": ["adi_acc_input", "adi_acc_output", "adi_acc_n"],
+	"execcmd": "../../../benchmarks/Accelerators/FFTA/FFTA",
+	"functionname": "accel_cfft_wrapper",
+	"typemap": {
+		"adi_acc_input": "array(complex_float#adi_acc_n)",
+		"adi_acc_output": "array(complex_float#adi_acc_n)",
+		"adi_acc_n": "int32"
+	},
+	"required_includes": ["../../benchmarks/Accelerators/FFTA/adi_emulation.c"],
+	"valid": {
+		"adi_acc_n": "set(power_of_two(6, 20))"
+	},
+	"compiler_flags": ["-lfftw3", "-lfftw3f"],
+	"classmap": {
+		"complex_float": {
+			"notes": "ADI-defined class",
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float32",
+				"im": "float32"
+			}
+		}
+	},
+	"alignment": {
+		"adi_acc_input": 32,
+		"adi_acc_output": 32
+	},
+	"notes": "Uses FFTW as a simulation tool to enable cross compilation (since we don't have an FFTA model, and don't want to build on-board"
+}

@@ -1,0 +1,6 @@
+Source: https://github.com/BanTheRewind/Cinder-KissFft
+Commit: 616c7d951ea6efb045ef4564d95904e20382328e
+License: None
+MainFile: None
+FFTFunction: meow_fft.h:meow_radix_2_dit
+Notes: Multiple compileable functions.  Main interface requires understanding sparse struct.

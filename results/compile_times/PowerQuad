@@ -1,0 +1,642 @@
+ -n
+
+real	0m7.755s
+user	0m26.215s
+sys	0m0.681s
+
+real	0m12.732s
+user	0m31.866s
+sys	0m0.567s
+
+real	0m13.481s
+user	0m34.594s
+sys	0m0.617s
+
+real	0m7.166s
+user	0m23.769s
+sys	0m0.682s
+synth: internal error, uncaught exception:
+       (Sys_error
+         "../results/Github/JodiTheTigger_meow_fft/value_profiles/4.json: No such file or directory")
+       Raised by primitive operation at Stdlib.open_in_gen in file "stdlib.ml", line 399, characters 28-54
+       Called from Yojson.Basic.from_file in file "lib/read.mll", line 1135, characters 13-25
+       Called from Json_utils.load_value_map_from in file "json/json_utils.ml", line 44, characters 12-39
+       Called from Base__List.count_map in file "src/list.ml", line 405, characters 13-17
+       Called from Parse_iospec.load_iospec in file "parsers/spec/parse_iospec.ml", line 61, characters 22-141
+       Called from Main.main in file "main.ml", line 16, characters 40-71
+       Called from Cmdliner_term.app.(fun) in file "src/cmdliner_term.ml", line 25, characters 19-24
+       Called from Cmdliner.Term.run in file "src/cmdliner.ml", line 117, characters 32-39
+
+real	0m0.528s
+user	0m0.496s
+sys	0m0.032s
+
+real	0m6.185s
+user	0m22.733s
+sys	0m0.597s
+
+real	0m5.943s
+user	0m22.400s
+sys	0m0.661s
+synth: internal error, uncaught exception:
+       (Sys_error
+         "../results/Github/marton78_pffft/value_profiles/4.json: No such file or directory")
+       Raised by primitive operation at Stdlib.open_in_gen in file "stdlib.ml", line 399, characters 28-54
+       Called from Yojson.Basic.from_file in file "lib/read.mll", line 1135, characters 13-25
+       Called from Json_utils.load_value_map_from in file "json/json_utils.ml", line 44, characters 12-39
+       Called from Base__List.count_map in file "src/list.ml", line 405, characters 13-17
+       Called from Parse_iospec.load_iospec in file "parsers/spec/parse_iospec.ml", line 61, characters 22-141
+       Called from Main.main in file "main.ml", line 16, characters 40-71
+       Called from Cmdliner_term.app.(fun) in file "src/cmdliner_term.ml", line 25, characters 19-24
+       Called from Cmdliner.Term.run in file "src/cmdliner.ml", line 117, characters 32-39
+
+real	0m0.533s
+user	0m0.497s
+sys	0m0.036s
+synth: internal error, uncaught exception:
+       (Sys_error
+         "../results/Github/dlinyj_fft/value_profiles/4.json: No such file or directory")
+       Raised by primitive operation at Stdlib.open_in_gen in file "stdlib.ml", line 399, characters 28-54
+       Called from Yojson.Basic.from_file in file "lib/read.mll", line 1135, characters 13-25
+       Called from Json_utils.load_value_map_from in file "json/json_utils.ml", line 44, characters 12-39
+       Called from Base__List.count_map in file "src/list.ml", line 405, characters 13-17
+       Called from Parse_iospec.load_iospec in file "parsers/spec/parse_iospec.ml", line 61, characters 22-141
+       Called from Main.main in file "main.ml", line 16, characters 40-71
+       Called from Cmdliner_term.app.(fun) in file "src/cmdliner_term.ml", line 25, characters 19-24
+       Called from Cmdliner.Term.run in file "src/cmdliner.ml", line 117, characters 32-39
+
+real	0m0.525s
+user	0m0.485s
+sys	0m0.040s
+synthethizer_temps/3.cpp: In function 'void recFFT_wrapper_accel_internal(_complex_double_*, _complex_double_*, unsigned int, bool)':
+synthethizer_temps/3.cpp:160:1: error: 'recFFT_wrapper' was not declared in this scope; did you mean 'FFT_wrapper'?
+  160 | recFFT_wrapper(outvec, invec, n, forward);
+      | ^~~~~~~~~~~~~~
+      | FFT_wrapper
+synthethizer_temps/1.cpp: In function 'void recFFT_wrapper_accel_internal(_complex_double_*, _complex_double_*, unsigned int, bool)':
+synthethizer_temps/1.cpp:160:1: error: 'recFFT_wrapper' was not declared in this scope; did you mean 'FFT_wrapper'?
+  160 | recFFT_wrapper(outvec, invec, n, forward);
+      | ^~~~~~~~~~~~~~
+      | FFT_wrapper
+synthethizer_temps/2.cpp: In function 'void recFFT_wrapper_accel_internal(_complex_double_*, _complex_double_*, unsigned int, bool)':
+synthethizer_temps/2.cpp:160:1: error: 'recFFT_wrapper' was not declared in this scope; did you mean 'FFT_wrapper'?
+  160 | recFFT_wrapper(outvec, invec, n, forward);
+      | ^~~~~~~~~~~~~~
+      | FFT_wrapper
+synthethizer_temps/4.cpp: In function 'void recFFT_wrapper_accel_internal(_complex_double_*, _complex_double_*, unsigned int, bool)':
+synthethizer_temps/4.cpp:160:1: error: 'recFFT_wrapper' was not declared in this scope; did you mean 'FFT_wrapper'?
+  160 | recFFT_wrapper(outvec, invec, n, forward);
+      | ^~~~~~~~~~~~~~
+      | FFT_wrapper
+In file included from synthethizer_temps/3.cpp:60:
+synthethizer_temps/../../benchmarks/Github/code/gregfjohnson_fft/self_contained_code.c: At global scope:
+synthethizer_temps/../../benchmarks/Github/code/gregfjohnson_fft/self_contained_code.c:17:13: warning: 'void dbPrint(int, int, int, __complex__ double, __complex__ double, __complex__ double*, __complex__ double*)' used but never defined
+   17 | static void dbPrint(int chunk, int chunkSize, int i, _g_complex directionalOmega, _g_complex omegaPower,
+      |             ^~~~~~~
+In file included from synthethizer_temps/1.cpp:60:
+synthethizer_temps/../../benchmarks/Github/code/gregfjohnson_fft/self_contained_code.c: At global scope:
+synthethizer_temps/../../benchmarks/Github/code/gregfjohnson_fft/self_contained_code.c:17:13: warning: 'void dbPrint(int, int, int, __complex__ double, __complex__ double, __complex__ double*, __complex__ double*)' used but never defined
+   17 | static void dbPrint(int chunk, int chunkSize, int i, _g_complex directionalOmega, _g_complex omegaPower,
+      |             ^~~~~~~
+In file included from synthethizer_temps/2.cpp:60:
+synthethizer_temps/../../benchmarks/Github/code/gregfjohnson_fft/self_contained_code.c: At global scope:
+synthethizer_temps/../../benchmarks/Github/code/gregfjohnson_fft/self_contained_code.c:17:13: warning: 'void dbPrint(int, int, int, __complex__ double, __complex__ double, __complex__ double*, __complex__ double*)' used but never defined
+   17 | static void dbPrint(int chunk, int chunkSize, int i, _g_complex directionalOmega, _g_complex omegaPower,
+      |             ^~~~~~~
+In file included from synthethizer_temps/4.cpp:60:
+synthethizer_temps/../../benchmarks/Github/code/gregfjohnson_fft/self_contained_code.c: At global scope:
+synthethizer_temps/../../benchmarks/Github/code/gregfjohnson_fft/self_contained_code.c:17:13: warning: 'void dbPrint(int, int, int, __complex__ double, __complex__ double, __complex__ double*, __complex__ double*)' used but never defined
+   17 | static void dbPrint(int chunk, int chunkSize, int i, _g_complex directionalOmega, _g_complex omegaPower,
+      |             ^~~~~~~
+synth: internal error, uncaught exception:
+       "Assert_failure backend/build_code.ml:53:16"
+       Raised at Build_code.build_code.(fun) in file "backend/build_code.ml", line 53, characters 16-30
+       Called from Base__List.count_map in file "src/list.ml", line 399, characters 13-17
+       Called from Build_code.build_code in file "backend/build_code.ml", line 51, characters 23-118
+       Called from Synthesize.run_synthesis in file "synthesize.ml", line 88, characters 18-59
+       Called from Main.main in file "main.ml", line 20, characters 12-88
+       Called from Cmdliner_term.app.(fun) in file "src/cmdliner_term.ml", line 25, characters 19-24
+       Called from Cmdliner.Term.run in file "src/cmdliner.ml", line 117, characters 32-39
+
+real	0m1.658s
+user	0m4.695s
+sys	0m0.350s
+In file included from synthethizer_temps/4.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/9.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/1.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/12.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/8.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/5.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/11.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/3.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/6.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/7.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/10.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/2.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+
+real	0m39.503s
+user	2m41.341s
+sys	0m2.430s
+In file included from synthethizer_temps/11.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/5.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/1.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/7.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/6.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/8.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/3.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/4.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/10.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/12.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/9.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+In file included from synthethizer_temps/2.cpp:66:
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c: In function 'int fft(__complex__ float*, size_t)':
+synthethizer_temps/../../benchmarks/Github/code/xbarin02_uFFT_2/self_contained_code.c:85:47: warning: invalid conversion from 'void*' to '__complex__ float*' [-fpermissive]
+   85 |  float _Complex *buffers[2] = { vector, malloc(N*sizeof(float _Complex)) };
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+
+real	0m41.144s
+user	2m59.509s
+sys	0m2.590s
+=================================================================
+==1006275==ERROR: AddressSanitizer: dynamic-stack-buffer-overflow on address 0x7ffff3fe9644 at pc 0x00000040c703 bp 0x7ffff3fe93d0 sp 0x7ffff3fe93c8
+WRITE of size 4 at 0x7ffff3fe9644 thread T0
+    #2 0x7fad9c74c77f in __libc_start_main (/nix/store/mij848h2x5wiqkwhg027byvmf9x3gx7y-glibc-2.33-50/lib/libc.so.6+0x2777f)
+
+Address 0x7ffff3fe9644 is located in stack of thread T0
+Shadow bytes around the buggy address:
+  0x10007e7f5270: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007e7f5280: 00 00 00 00 ca ca ca ca 00 00 00 00 00 00 00 00
+  0x10007e7f5290: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007e7f52a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007e7f52b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x10007e7f52c0: 00 00 00 00 00 00 00 00[cb]cb cb cb 00 00 00 00
+  0x10007e7f52d0: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca ca ca
+  0x10007e7f52e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007e7f52f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007e7f5300: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007e7f5310: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==1006275==ABORTING
+=================================================================
+==1006278==ERROR: AddressSanitizer: dynamic-stack-buffer-overflow on address 0x7ffe7843e8c4 at pc 0x00000040c703 bp 0x7ffe7843e660 sp 0x7ffe7843e658
+WRITE of size 4 at 0x7ffe7843e8c4 thread T0
+    #2 0x7f56ac2a977f in __libc_start_main (/nix/store/mij848h2x5wiqkwhg027byvmf9x3gx7y-glibc-2.33-50/lib/libc.so.6+0x2777f)
+
+Address 0x7ffe7843e8c4 is located in stack of thread T0
+Shadow bytes around the buggy address:
+  0x10004f07fcc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004f07fcd0: 00 00 00 00 ca ca ca ca 00 00 00 00 00 00 00 00
+  0x10004f07fce0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004f07fcf0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004f07fd00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x10004f07fd10: 00 00 00 00 00 00 00 00[cb]cb cb cb 00 00 00 00
+  0x10004f07fd20: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca ca ca
+  0x10004f07fd30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004f07fd40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004f07fd50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004f07fd60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==1006278==ABORTING
+=================================================================
+==1006281==ERROR: AddressSanitizer: dynamic-stack-buffer-overflow on address 0x7ffe45aa1d04 at pc 0x00000040c720 bp 0x7ffe45aa1aa0 sp 0x7ffe45aa1a98
+WRITE of size 4 at 0x7ffe45aa1d04 thread T0
+    #2 0x7f944a6e777f in __libc_start_main (/nix/store/mij848h2x5wiqkwhg027byvmf9x3gx7y-glibc-2.33-50/lib/libc.so.6+0x2777f)
+
+Address 0x7ffe45aa1d04 is located in stack of thread T0
+Shadow bytes around the buggy address:
+  0x100048b4c350: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca ca ca
+  0x100048b4c360: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100048b4c370: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100048b4c380: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100048b4c390: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x100048b4c3a0:[cb]cb cb cb 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100048b4c3b0: 00 00 00 00 ca ca ca ca 00 00 00 00 00 00 00 00
+  0x100048b4c3c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100048b4c3d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100048b4c3e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100048b4c3f0: 00 00 00 00 00 00 00 00 cb cb cb cb 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==1006281==ABORTING
+=================================================================
+==1006284==ERROR: AddressSanitizer: dynamic-stack-buffer-overflow on address 0x7ffc4c068c84 at pc 0x00000040c720 bp 0x7ffc4c068a10 sp 0x7ffc4c068a08
+WRITE of size 4 at 0x7ffc4c068c84 thread T0
+    #2 0x7fd2355cc77f in __libc_start_main (/nix/store/mij848h2x5wiqkwhg027byvmf9x3gx7y-glibc-2.33-50/lib/libc.so.6+0x2777f)
+
+Address 0x7ffc4c068c84 is located in stack of thread T0
+Shadow bytes around the buggy address:
+  0x100009805140: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca ca ca
+  0x100009805150: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100009805160: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100009805170: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100009805180: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x100009805190:[cb]cb cb cb 00 00 00 00 00 00 00 00 00 00 00 00
+  0x1000098051a0: 00 00 00 00 ca ca ca ca 00 00 00 00 00 00 00 00
+  0x1000098051b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x1000098051c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x1000098051d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x1000098051e0: 00 00 00 00 00 00 00 00 cb cb cb cb 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==1006284==ABORTING
+=================================================================
+==1006299==ERROR: AddressSanitizer: dynamic-stack-buffer-overflow on address 0x7ffd5d41b404 at pc 0x00000040c703 bp 0x7ffd5d41b1a0 sp 0x7ffd5d41b198
+WRITE of size 4 at 0x7ffd5d41b404 thread T0
+    #2 0x7f62b197777f in __libc_start_main (/nix/store/mij848h2x5wiqkwhg027byvmf9x3gx7y-glibc-2.33-50/lib/libc.so.6+0x2777f)
+
+Address 0x7ffd5d41b404 is located in stack of thread T0
+Shadow bytes around the buggy address:
+  0x10002ba7b630: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca ca ca
+  0x10002ba7b640: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ba7b650: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ba7b660: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ba7b670: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x10002ba7b680:[cb]cb cb cb 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ba7b690: 00 00 00 00 ca ca ca ca 00 00 00 00 00 00 00 00
+  0x10002ba7b6a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ba7b6b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ba7b6c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ba7b6d0: 00 00 00 00 00 00 00 00 cb cb cb cb 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==1006299==ABORTING
+=================================================================
+==1006302==ERROR: AddressSanitizer: dynamic-stack-buffer-overflow on address 0x7ffe6658d904 at pc 0x00000040c703 bp 0x7ffe6658d680 sp 0x7ffe6658d678
+WRITE of size 4 at 0x7ffe6658d904 thread T0
+    #2 0x7fca4cdd977f in __libc_start_main (/nix/store/mij848h2x5wiqkwhg027byvmf9x3gx7y-glibc-2.33-50/lib/libc.so.6+0x2777f)
+
+Address 0x7ffe6658d904 is located in stack of thread T0
+Shadow bytes around the buggy address:
+  0x10004cca9ad0: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca ca ca
+  0x10004cca9ae0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004cca9af0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004cca9b00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004cca9b10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x10004cca9b20:[cb]cb cb cb 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004cca9b30: 00 00 00 00 ca ca ca ca 00 00 00 00 00 00 00 00
+  0x10004cca9b40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004cca9b50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004cca9b60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004cca9b70: 00 00 00 00 00 00 00 00 cb cb cb cb 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==1006302==ABORTING
+=================================================================
+==1006305==ERROR: AddressSanitizer: dynamic-stack-buffer-overflow on address 0x7ffd46879bc4 at pc 0x00000040c720 bp 0x7ffd46879950 sp 0x7ffd46879948
+WRITE of size 4 at 0x7ffd46879bc4 thread T0
+    #2 0x7ff984cff77f in __libc_start_main (/nix/store/mij848h2x5wiqkwhg027byvmf9x3gx7y-glibc-2.33-50/lib/libc.so.6+0x2777f)
+
+Address 0x7ffd46879bc4 is located in stack of thread T0
+Shadow bytes around the buggy address:
+  0x100028d07320: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028d07330: 00 00 00 00 ca ca ca ca 00 00 00 00 00 00 00 00
+  0x100028d07340: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028d07350: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028d07360: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x100028d07370: 00 00 00 00 00 00 00 00[cb]cb cb cb 00 00 00 00
+  0x100028d07380: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca ca ca
+  0x100028d07390: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028d073a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028d073b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028d073c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==1006305==ABORTING
+=================================================================
+==1006308==ERROR: AddressSanitizer: dynamic-stack-buffer-overflow on address 0x7ffc0d328cc4 at pc 0x00000040c720 bp 0x7ffc0d328a40 sp 0x7ffc0d328a38
+WRITE of size 4 at 0x7ffc0d328cc4 thread T0
+    #2 0x7ff62863177f in __libc_start_main (/nix/store/mij848h2x5wiqkwhg027byvmf9x3gx7y-glibc-2.33-50/lib/libc.so.6+0x2777f)
+
+Address 0x7ffc0d328cc4 is located in stack of thread T0
+Shadow bytes around the buggy address:
+  0x100001a5d140: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100001a5d150: 00 00 00 00 ca ca ca ca 00 00 00 00 00 00 00 00
+  0x100001a5d160: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100001a5d170: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100001a5d180: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x100001a5d190: 00 00 00 00 00 00 00 00[cb]cb cb cb 00 00 00 00
+  0x100001a5d1a0: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca ca ca
+  0x100001a5d1b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100001a5d1c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100001a5d1d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100001a5d1e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==1006308==ABORTING
+
+real	0m13.020s
+user	1m55.123s
+sys	0m2.732s
+
+real	0m12.670s
+user	0m35.637s
+sys	0m0.765s
+synth: internal error, uncaught exception:
+       (Sys_error
+         "../results/Github/akw0088_fft/value_profiles/1024.json: No such file or directory")
+       Raised by primitive operation at Stdlib.open_in_gen in file "stdlib.ml", line 399, characters 28-54
+       Called from Yojson.Basic.from_file in file "lib/read.mll", line 1135, characters 13-25
+       Called from Json_utils.load_value_map_from in file "json/json_utils.ml", line 44, characters 12-39
+       Called from Base__List.count_map in file "src/list.ml", line 405, characters 13-17
+       Called from Parse_iospec.load_iospec in file "parsers/spec/parse_iospec.ml", line 61, characters 22-141
+       Called from Main.main in file "main.ml", line 16, characters 40-71
+       Called from Cmdliner_term.app.(fun) in file "src/cmdliner_term.ml", line 25, characters 19-24
+       Called from Cmdliner.Term.run in file "src/cmdliner.ml", line 117, characters 32-39
+
+real	0m0.523s
+user	0m0.507s
+sys	0m0.016s
+
+real	0m29.870s
+user	0m47.738s
+sys	0m0.621s
+
+real	0m6.005s
+user	0m22.902s
+sys	0m0.527s

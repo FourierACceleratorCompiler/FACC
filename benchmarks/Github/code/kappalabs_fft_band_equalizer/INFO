@@ -1,0 +1,5 @@
+Source: https://github.com/kappalabs/fft_band_equalizer/
+Commit: acd06845b2e704da99b2a58a99bd285a84d4a67c
+License: GPLv3
+MainFile: None
+FFTFucntion: equalizer.c:recFFT

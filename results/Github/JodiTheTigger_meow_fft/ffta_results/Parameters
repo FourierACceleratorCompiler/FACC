@@ -1,0 +1,3 @@
+TimesPerLoop: 1000
+Loops: 10
+Notes: Code runs out of memory for sizes > 1024.  Only testing <= 1024.

@@ -1,0 +1,6 @@
+Source: https://github.com/joaodias/DSP-Digital-Signal-Processing-
+Commit: ca862d83fadb2eb9aa8afb5437a47306822729d3
+License: None
+MainFile: None
+FFTFucntion: FFT.c:fft
+Algorithm: Radix-2 DIT 

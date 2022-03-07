@@ -1,0 +1,31 @@
+{
+	"livein": ["p", "c", "in", "norm"],
+	"liveout": ["out"],
+	"execcmd": "../benchmarks/Github/code/dlinyj_fft/exec",
+	"funname": "fft_calc",
+	"funargs": ["p", "c", "in", "out", "norm"],
+	"typemap": {
+		"p": "int32",
+		"c": "array(float32)",
+		"in": "array(float32)",
+		"out": "array(float32)",
+		"norm": "int32"
+	},
+	"required_includes": ["../../benchmarks/Github/code/dlinyj_fft/self_contained_code.c"],
+	"range": {
+		"p": "set(range(1,15))",
+		"norm": "set(1)"
+	},
+	"value_profiles": [
+		"../results/Github/dlinyj_fft/value_profiles/4.json",
+		"../results/Github/dlinyj_fft/value_profiles/8.json",
+		"../results/Github/dlinyj_fft/value_profiles/16.json",
+		"../results/Github/dlinyj_fft/value_profiles/32.json",
+		"../results/Github/dlinyj_fft/value_profiles/64.json",
+		"../results/Github/dlinyj_fft/value_profiles/128.json",
+		"../results/Github/dlinyj_fft/value_profiles/256.json",
+		"../results/Github/dlinyj_fft/value_profiles/512.json",
+		"../results/Github/dlinyj_fft/value_profiles/1024.json"
+	],
+	"classmap": { }
+}

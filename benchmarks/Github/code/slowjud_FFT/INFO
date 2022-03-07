@@ -1,0 +1,6 @@
+Source: https://github.com/slowjud/FFT
+Commit: 8c9a205
+License: None
+MainFile: None
+FFTFunction: ext/fft_api.c:perform_fft
+Notes: Ruby wrapper.

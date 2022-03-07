@@ -1,0 +1,7 @@
+Source: https://github.com/dlinyj/fft
+Commit: 8c4d784
+License: Creative Commons license Attribution-NonCommercial 
+MainFile: None
+FFTFunction: fft.c:fft_calc
+Notes: 
+FunctionLine: 143

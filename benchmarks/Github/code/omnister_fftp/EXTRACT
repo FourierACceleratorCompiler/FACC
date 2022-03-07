@@ -1,0 +1,3 @@
+fftlib.c: 1,3 # defines
+fftlib.h: 2,5 # typedef
+fftlib.c: 7,76 # implementation

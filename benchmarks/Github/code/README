@@ -1,0 +1,17 @@
+This is the github evaluation set for FACC.
+You should run nix-shell in the base directory of the repository to get the various tools needed for this.
+
+clone.sh clones the repositories, and uses the local extraction scripts to extract the right regions of code to put these into the approrpriate files.
+It then runs a makefile in each folder, which builds these into the executables
+that FACC needs to run.
+Typemaps etc. are already specified.
+
+
+#Computing IDLCheckDataFFT:
+IDLCheckData is a measure of how well IDL does with an FFT pattern.
+The first step is to clone IDL (see instructions in Ginsbach 2020).
+Second step is to place the FFTIdiom.idl file in-place of the idl
+file within IDL.
+Third step is to repeatedly run ./idl_check.sh <path to IDL> while
+deleteing 10 lines at a time from the ComplexReductionsAndHistograms
+pattern that has been modified to match FFTs

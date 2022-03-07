@@ -1,0 +1,48 @@
+{
+	"livein": ["plan", "input"],
+	"liveout": ["output"],
+	"execcmd": "../benchmarks/Github/code/Themaister_muFFT/exec",
+	"funname": "mufft_execute_plan_1d",
+	"funargs": ["setup", "input", "output", "work", "direction"],
+	"typemap": {
+		"setup": "pointer(PFFFT_Setup_Desugar)",
+		"input": "array(float32)",
+		"output": "array(float32)",
+		"work": "array(float32)",
+		"direction": "int32"
+	},
+	"range": {
+		"direction": "set(0, 1)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/marton78_pffft/self_contained_code.c"],
+	"classmap": {
+		"PFFFT_Setup_Desugar": {
+			"type": "struct",
+			"symbols": ["N", "Ncvec",
+				"ifac",
+				"transform",
+				"data",
+				"e",
+				"twiddle"],
+			"typemap": {
+				"N": "int32",
+				"Ncvec": "int32",
+				"ifac": "array(int32#15)",
+				"transform": "int32",
+				"data": "array(float32)",
+				"e": "array(float32)",
+				"twiddle": "array(float32)"
+			},
+			"range": {
+				"transform": "set(0, 1)"
+			}
+		},
+		"v4sf": {
+			"type": "struct",
+			"symbols": ["a"],
+			"typemap": {
+				"a": "float32"
+			}
+		}
+	}
+}

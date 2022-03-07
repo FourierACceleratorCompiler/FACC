@@ -1,0 +1,33 @@
+{
+	"livein": ["input"],
+	"liveout": ["output"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/helloworldpark_wavelet-fft/exec",
+	"funname": "fft",
+	"funargs": ["input", "output"],
+	"typemap": {
+		"input": "pointer(vec)",
+		"output": "pointer(pointer(vec))"
+	},
+	"required_includes": ["../../benchmarks/Github/code/helloworldpark_wavelet-fft/self_contained_code.c"],
+	"classmap": {
+		"vec": {
+			"type": "struct",
+			"symbols": ["length", "arr"],
+			"typemap": {
+				"length": "uint64",
+				"arr": "array(Complex)"
+			}
+		},
+		"Complex": {
+			"type": "struct",
+			"symbols": ["re", "im"],
+
+			"typemap": {
+				"re": "float64",
+
+				"im": "float64"
+			}
+		}
+	}
+}

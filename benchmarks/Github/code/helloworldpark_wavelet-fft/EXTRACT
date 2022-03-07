@@ -1,0 +1,8 @@
+wavelet-fft/wavelet-fft/wfReal.h: 12,12 # real def
+wavelet-fft/wavelet-fft/wfComplex.h: 14,18 # complex defs
+wavelet-fft/wavelet-fft/wfComplex.c: 11,16 # complex helpers
+wavelet-fft/wavelet-fft/wfPrimitiveOperation.c: 13,54 # complex ops
+wavelet-fft/wavelet-fft/wfVector.h: 13,18 # vector defs
+wavelet-fft/wavelet-fft/wfVector.c: 13,86 # vector ops
+wavelet-fft/wavelet-fft/fourierTransform.c: 10,54 # fft defn
+wavelet-fft/wavelet-fft/fourierTransform.c: 141,208 # helper functions

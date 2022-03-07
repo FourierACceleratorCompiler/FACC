@@ -1,0 +1,6 @@
+Source: https://github.com/omnister/fftp
+Commit: 8225e1b3bdc9bdbb9e8b800ca3cec102e03055d2
+License: GPLv2
+MainFile: None
+FFTFucntion: fftlib.c:fft_1d
+Notes: 

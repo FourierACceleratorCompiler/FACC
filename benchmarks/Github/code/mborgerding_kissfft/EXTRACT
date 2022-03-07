@@ -1,0 +1,20 @@
+kiss_fft_log.h: 12,15 # warning levels
+kiss_fft_log.h: 21,21 # empty dump function
+kiss_fft_log.h: 29,32 # errors
+kiss_fft.h: 12,15 # includes
+kiss_fft.h: 50,70 # malloc def
+kiss_fft.h: 83,83 # scalar def
+kiss_fft.h: 87,92 # struct def
+_kiss_fft_guts.h: 21 # maxfactors def
+_kiss_fft_guts.h: 27,32 # state def.
+_kiss_fft_guts.h: 86,93 # math opts defs
+_kiss_fft_guts.h: 97,97 # check overflow
+_kiss_fft_guts.h: 100,145 # math opts defs
+_kiss_fft_guts.h: 162,163 # fft guts
+kiss_fft.h: 83 # float def
+kiss_fft.c: 15,233 # more fft implemenbtation
+kiss_fft.c: 236,300 # more fft implemenbtation
+kiss_fft.c: 306,368 # kiss_alloc definition.
+kiss_fft.c: 371,400 # fft implementaiton
+tools/kfc.c: 11,61 # called function def.
+tools/kfc.c: 75,78 # fft function def.

@@ -1,0 +1,5 @@
+equalizer.c: 40,41 # includes
+complex.h: 40,53 # complex defn
+complex.c: 49,76 # complex helper funs
+complex.c: 214,254 # alloc/free
+equalizer.c: 404,454 # do the fft

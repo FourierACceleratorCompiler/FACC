@@ -1,0 +1,5 @@
+Source: https://github.com/helloworldpark/wavelet-fft
+Commit: 8ba7073b66f7a69fa5f8441b219fa0dbe69179f5
+License: MIT
+MainFile: None
+FFTFucntion: fourierTransform.c

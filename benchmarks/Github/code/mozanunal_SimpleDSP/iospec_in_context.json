@@ -1,0 +1,26 @@
+{
+	"livein": ["Y", "N"],
+	"liveout": ["Y"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/mozanunal_SimpleDSP/exec",
+	"funname": "FFT",
+	"funargs": ["Y", "N"],
+	"typemap": {
+		"Y": "array(COMPLEX)",
+		"N": "int32"
+	},
+	"range": {
+		"N": "set(64)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/mozanunal_SimpleDSP/self_contained_code.c"],
+	"classmap": {
+		"COMPLEX": {
+			"type": "struct",
+			"symbols": ["real", "imag"],
+			"typemap": {
+				"real": "float32",
+				"imag": "float32"
+			}
+		}
+	}
+}

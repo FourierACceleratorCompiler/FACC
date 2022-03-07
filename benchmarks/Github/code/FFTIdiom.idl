@@ -1,0 +1,129 @@
+Export Constraint ComplexReductionsAndHistograms
+(
+{icon} is a constant and 
+{i2} is bitcast instruction and
+{i5} is sext instruction and
+{i10} is mul instruction and
+{i11} is sext instruction and
+{i12} is mul instruction and
+{i13} is getElementPtr instruction and
+{i14} is bitcast instruction and
+{i15} is load instruction and
+{i16} is add instruction and
+{i17} is sext instruction and
+{i18} is mul instruction and
+{i19} is getElementPtr instruction and
+{i20} is bitcast instruction and
+{i21} is load instruction and
+{i22} is sext instruction and
+{i23} is trunc instruction and
+{i24} is sext instruction and
+{i25} is sext instruction and
+
+{i28} is trunc instruction and
+{i29} is mul instruction and
+{i30} is sext instruction and
+{i31} is mul instruction and
+{i32} is getElementPtr instruction and
+{i33} is bitcast instruction and
+{i34} is load instruction and
+{i35} is add instruction and
+{i36} is sext instruction and
+{i37} is mul instruction and
+{i38} is getElementPtr instruction and
+{i39} is bitcast instruction and
+{i40} is load instruction and
+{i41} is fadd instruction and
+
+{i25} control flow dominates {i28} and
+
+{i10} is first argument of {i12} and
+{i12} is second argument of {i13} and
+{i13} is first argument of {i15} and
+{i10} is first argument of {i16} and
+{i16} is first argument of {i18} and
+{i18} is second argument of {i19} and
+{icon} is first argument of {i19} and
+
+{i29} is first argument of {i31} and
+{i31} is second argument of {i32} and
+{i0} is first argument of {i32} and
+{i32} is first argument of {i34} and
+{i29} is first argument of {i35} and
+{i35} is first argument of {i37} and
+{i37} is second argument of {i38} and
+{i0} is first argument of {i38} and
+
+{i2} is not the same as {i14} and
+{i2} is not the same as {i20} and
+{i14} is not the same as {i20} and
+{i2} is not the same as {i33} and
+{i14} is not the same as {i33} and
+{i20} is not the same as {i33} and
+{i2} is not the same as {i39} and
+{i14} is not the same as {i39} and
+{i20} is not the same as {i39} and
+{i33} is not the same as {i39} and
+
+{i5} is not the same as {i11} and
+{i5} is not the same as {i17} and
+{i11} is not the same as {i17} and
+{i5} is not the same as {i22} and
+{i11} is not the same as {i22} and
+{i17} is not the same as {i22} and
+{i5} is not the same as {i24} and
+{i11} is not the same as {i24} and
+{i17} is not the same as {i24} and
+{i22} is not the same as {i24} and
+{i5} is not the same as {i25} and
+{i11} is not the same as {i25} and
+{i17} is not the same as {i25} and
+{i22} is not the same as {i25} and
+{i24} is not the same as {i25} and
+{i5} is not the same as {i30} and
+{i11} is not the same as {i30} and
+{i17} is not the same as {i30} and
+{i22} is not the same as {i30} and
+{i24} is not the same as {i30} and
+{i25} is not the same as {i30} and
+{i5} is not the same as {i36} and
+{i11} is not the same as {i36} and
+{i17} is not the same as {i36} and
+{i22} is not the same as {i36} and
+{i24} is not the same as {i36} and
+{i25} is not the same as {i36} and
+{i30} is not the same as {i36} and
+
+{i10} is not the same as {i12} and
+{i10} is not the same as {i18} and
+{i12} is not the same as {i18} and
+
+{i13} is not the same as {i19} and
+{i13} is not the same as {i32} and
+{i19} is not the same as {i32} and
+{i13} is not the same as {i38} and
+{i19} is not the same as {i38} and
+{i32} is not the same as {i38} and
+
+{i15} is not the same as {i21} and
+{i15} is not the same as {i29} and
+{i21} is not the same as {i29} and
+{i15} is not the same as {i31} and
+{i21} is not the same as {i31} and
+{i29} is not the same as {i31} and
+{i15} is not the same as {i34} and
+{i21} is not the same as {i34} and
+{i29} is not the same as {i34} and
+{i31} is not the same as {i34} and
+{i15} is not the same as {i40} and
+{i21} is not the same as {i40} and
+{i29} is not the same as {i40} and
+{i31} is not the same as {i40} and
+{i34} is not the same as {i40} and
+
+{i10} is not the same as {i29} and
+{i10} is not the same as {i31} and
+{i29} is not the same as {i31}
+
+)
+End

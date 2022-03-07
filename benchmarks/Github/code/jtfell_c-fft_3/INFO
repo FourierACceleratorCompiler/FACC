@@ -1,0 +1,8 @@
+Source: https://github.com/jtfell/c-fft
+Commit: 9b78802
+License: None
+MainFile: None
+FFTFucntion: fft.c:FFT_CooleyTukey
+Notes: Could use the context in benchmark.c to support the other implemented algs that have sparse inputs.
+Algorithm: Radix 2 FFT
+FunctionLine: 114

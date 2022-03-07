@@ -1,0 +1,4 @@
+SUBSTITUTE:complex:j_complex_t: Avoid name clashes with the c-type which this isn't.
+FFT/conf.h: 11,18 # some defs
+FFT/conf.h: 80,84 # complex typedef
+FFT/FFT.c: 10,118 # fft implementation

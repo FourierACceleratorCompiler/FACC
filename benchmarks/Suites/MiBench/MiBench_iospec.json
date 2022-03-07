@@ -1,0 +1,20 @@
+{
+	"livein":["NumSamples", "InverseTransform", "RealIn", "ImagIn"],
+	"liveout": ["RealOut", "ImagOut"],
+	"execcmd": "../benchmarks/Suites/MiBench/MiBench_exec",
+	"funname": "fft_float",
+	"funargs":["NumSamples", "InverseTransform", "RealIn", "ImagIn", "RealOut", "ImagOut"],
+	"typemap": { "NumSamples": "int32",
+		"InverseTransform": "int32",
+		"RealIn": "array(float32)",
+		"ImagIn": "array(float32)",
+		"RealOut": "array(float32)",
+		"ImagOut": "array(float32)"
+		},
+	"required_includes": ["../../benchmarks/Suites/MiBench/MiBench.cpp"],
+	"range": {
+		"NumSamples": "set(2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384)",
+		"InverseTransform": "set(0)"
+	},
+	"classmap": {}
+}

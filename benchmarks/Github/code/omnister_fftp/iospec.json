@@ -1,0 +1,23 @@
+{
+	"livein": ["array", "n"],
+	"liveout": ["array"],
+	"returnvarname": ["array"],
+	"execcmd": "../benchmarks/Github/code/omnister_fftp/exec",
+	"funname": "fft_1d",
+	"funargs": ["array", "n"],
+	"typemap": {
+		"array": "array(COMPLEX)",
+		"n": "int32"
+	},
+	"required_includes": ["../../benchmarks/Github/code/omnister_fftp/self_contained_code.c"],
+	"classmap": {
+		"COMPLEX": {
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float32",
+				"im": "float32"
+			}
+		}
+	}
+}

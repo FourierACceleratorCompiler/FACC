@@ -1,0 +1,25 @@
+{
+	"livein": ["x", "N"],
+	"liveout": ["x"],
+	"execcmd": "../benchmarks/Github/code/xiahouzouxin_fft/exec",
+	"funname": "fft",
+	"funargs": ["x", "N"],
+	"typemap": {
+		"x": "array(COMPLEX)",
+		"N": "int32"
+	},
+	"required_includes": ["../../benchmarks/Github/code/xiahouzouxin_fft/self_contained_code.c"],
+	"range": {
+		"N": "set(power_of_two(0, 10))"
+	},
+	"classmap": {
+		"COMPLEX": {
+			"type": "struct",
+			"symbols": ["real", "imag"],
+			"typemap": {
+				"real": "float32",
+				"imag": "float32"
+			}
+		}
+	}
+}

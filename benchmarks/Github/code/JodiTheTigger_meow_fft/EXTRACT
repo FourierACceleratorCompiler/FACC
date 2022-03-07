@@ -1,0 +1,7 @@
+meow_fft.h: 29,34 # complex typedef
+meow_fft.h: 125,125 # complex typedefs
+meow_fft.h: 131,152 # input type typedefs
+meow_fft.h: 438,544 # math functions
+meow_fft.h: 548,1278 # base cases for recursion
+meow_fft.h: 1944,1994 # mixed radix call.
+meow_fft.h: 2232,2247 # fft entry-point.

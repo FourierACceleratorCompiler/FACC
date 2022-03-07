@@ -1,0 +1,6 @@
+Source: https://github.com/rshuston/FFT-C
+Commit: 6fb0dcfcd271e3d3d9e272aa2097aa84a1e1e346
+License: MIT
+MainFile: None
+FFTFucntion: fft.c:DFT_naive
+Notes: Could use the context in benchmark.c to support the other implemented algs that have sparse inputs.

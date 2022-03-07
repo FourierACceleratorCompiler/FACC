@@ -1,0 +1,6 @@
+Source: https://github.com/liscio/fft/ 
+Commit: 6d8824580927fe36e6fcc0179ab38381081c216e
+License: None
+MainFile: fft_straightforward.c
+FFTFunction: FFT
+FunctionLine: 38

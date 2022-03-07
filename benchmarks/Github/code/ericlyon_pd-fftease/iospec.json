@@ -1,0 +1,17 @@
+{
+	"livein": ["x", "NC", "forward"],
+	"liveout": ["x"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/ericlyon_pd-fftease/exec",
+	"funname": "fftease_cfft",
+	"funargs": ["x", "NC", "forward"],
+	"typemap": {
+		"x": "array(float32)",
+		"NC": "int32",
+		"forward": "int32"
+	},
+	"compiler_flags": ["-lm"],
+	"required_includes": ["../../benchmarks/Github/code/ericlyon_pd-fftease/self_contained_code.c"],
+	"classmap": {
+	}
+}

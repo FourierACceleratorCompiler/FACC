@@ -1,0 +1,6 @@
+Source: https://github.com/fakufaku/esp32-fft
+Commit: 4cbea56
+License: MIT
+MainFile:
+FFTFunction: components/fft/fft.c:fft
+Notes: Takes twiddle factors as input.  May need context.

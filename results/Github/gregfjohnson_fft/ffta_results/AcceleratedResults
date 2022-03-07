@@ -1,0 +1,72 @@
+Starting runs for size 64:
+Time: 0.000078587994
+AccTime: 0.000059526000
+Runs finished for size 64
+Starting runs for size 128:
+Time: 0.000099864000
+AccTime: 0.000058062000
+Runs finished for size 128
+Starting runs for size 256:
+Time: 0.000141128000
+AccTime: 0.000058774000
+Runs finished for size 256
+Starting runs for size 512:
+Time: 0.000217124000
+AccTime: 0.000059578000
+Runs finished for size 512
+Starting runs for size 1024:
+Time: 0.000378436000
+AccTime: 0.000064070000
+Runs finished for size 1024
+Starting runs for size 2048:
+Time: 0.000695572000
+AccTime: 0.000080598000
+Runs finished for size 2048
+Starting runs for size 4096:
+Time: 0.001655228000
+AccTime: 0.000425680000
+Runs finished for size 4096
+Starting runs for size 8192:
+Time: 0.003307155938
+AccTime: 0.000877394000
+Runs finished for size 8192
+Starting runs for size 16384:
+Time: 0.006791463750
+AccTime: 0.001841302000
+Runs finished for size 16384
+Starting runs for size 64:
+Time: 0.000079468000
+AccTime: 0.000058274000
+Runs finished for size 64
+Starting runs for size 128:
+Time: 0.000095680000
+AccTime: 0.000058150000
+Runs finished for size 128
+Starting runs for size 256:
+Time: 0.000141476000
+AccTime: 0.000058582000
+Runs finished for size 256
+Starting runs for size 512:
+Time: 0.000208828000
+AccTime: 0.000059554000
+Runs finished for size 512
+Starting runs for size 1024:
+Time: 0.000368032000
+AccTime: 0.000064054000
+Runs finished for size 1024
+Starting runs for size 2048:
+Time: 0.000708872000
+AccTime: 0.000080730000
+Runs finished for size 2048
+Starting runs for size 4096:
+Time: 0.001674324000
+AccTime: 0.000437634000
+Runs finished for size 4096
+Starting runs for size 8192:
+Time: 0.003349507813
+AccTime: 0.000876782000
+Runs finished for size 8192
+Starting runs for size 16384:
+Time: 0.006815608125
+AccTime: 0.001865562000
+Runs finished for size 16384

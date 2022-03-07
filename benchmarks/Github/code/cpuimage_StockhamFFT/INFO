@@ -1,0 +1,6 @@
+Source: https://github.com/cpuimage/StockhamFFT
+Commit: 565b8be0442bd5c9b74a094ee762556450498fa9
+License: None
+MainFile: None
+FFTFucntion: fft.c:fft
+FunctionLine: 53

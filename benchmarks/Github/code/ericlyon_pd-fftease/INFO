@@ -1,0 +1,7 @@
+Source: https://github.com/ericlyon/pd-fftease
+Commit: 552912e9c557dae7e2cec5f5d6c5bacbd6f6e075
+License: Custom Licsense (See License.txt)
+MainFile: None
+FFTFucntion: fft.c:fftease_cfft
+Notes: t_float seems undefined, but reading comments it seems clearly meant to be defined as float, perhaps to allow users to choose single or double precision as they wish.
+Algorithm: 

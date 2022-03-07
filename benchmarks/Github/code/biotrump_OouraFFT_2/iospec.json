@@ -1,0 +1,18 @@
+{
+	"livein": ["n", "isgn", "a", "ip", "w"],
+	"liveout": ["a"],
+	"returnvarname": [],
+	"execcmd": "../benchmarks/Github/code/biotrump_OouraFFT/exec",
+	"funname": "cdft",
+	"funargs": ["n", "isgn", "a", "ip", "w"],
+	"typemap": {
+		"n": "int32",
+		"isgn": "int32",
+		"a": "array(float64)",
+		"ip": "array(int32)",
+		"w": "array(float64)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/biotrump_OouraFFT/self_contained_code.c"],
+	"classmap": {
+	}
+}

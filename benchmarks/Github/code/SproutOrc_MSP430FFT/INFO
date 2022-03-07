@@ -1,0 +1,6 @@
+Source: https://github.com/SproutOrc/MSP430FFT
+Commit: 9a3436a
+License: None
+MainFile: fft.c
+FFTFunction: fft.c:
+Notes: Only supports a single lenght

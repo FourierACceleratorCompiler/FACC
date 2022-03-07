@@ -1,0 +1,67 @@
+{
+	"cmplx": {
+		"type": "struct",
+		"symbols": ["real", "imag"],
+		"typemap": {
+			"real": "float32",
+			"imag": "float32"
+		}
+	},
+	"COMPLEX": {
+		"type": "struct",
+		"symbols": ["real", "imag"],
+		"typemap": {
+			"real": "float32",
+			"imag": "float32"
+		}
+	},
+	"kiss_fft_cpx": {
+		"type": "struct",
+		"symbols": ["r", "i"],
+		"typemap": {
+			"r": "float32",
+			"i": "float32"
+		}
+	},
+	"std::complex<double>": {
+		"notes": "C++ style complex. ",
+		"type": "class",
+		"symbols": ["re", "im"],
+		"functions": [],
+		"typemap": {
+			"re": "float64",
+			"im": "float64"
+		}
+	},
+
+	"std::complex<float>": {
+		"notes": "C++ sytle complex specialized for floats. ",
+		"type": "class",
+		"symbols": ["re", "im"],
+		"functions": [],
+		"typemap": {
+			"re": "float32",
+			"im": "float32"
+		}
+	},
+
+	"_complex_float_": {
+		"notes": "Internal compiler representation of std::complex<double>",
+		"type": "class",
+		"symbols": ["re", "im"],
+		"functions": [],
+		"typemap": {
+			"re": "float32",
+			"im": "float32"
+		}
+	},
+
+	"Complex": {
+		"type": "struct",
+		"symbols": ["re", "im"],
+		"typemap": {
+			"re": "float32",
+			"im": "float32"
+		}
+	}
+}

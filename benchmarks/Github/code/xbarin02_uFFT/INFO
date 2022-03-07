@@ -1,0 +1,8 @@
+Source: https://github.com/xbarin02/uFFT
+Commit: 164baa511b10fd0710e6406d116d9bf913909bd0
+License: MIT
+MainFile: None
+FFTFucntion: fft-dit.c:fft
+Notes: different typemaps for different targets, so need different iospecs for each one (uses platform-specific vectorization).  This also uses enums, which are just sugar removed by the compiler, so we provide a wrapper to get around that sugar.
+Algorithm: Radix 2 DIF
+FunctionLine: 79

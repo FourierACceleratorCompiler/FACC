@@ -1,0 +1,6 @@
+components/fft/fft.c: 37,40 # includes
+components/fft/include/fft.h: 40,64 # config def
+components/fft/fft.c: 44,44 # two pi
+components/fft/fft.c: 48,114 # fft context creation
+components/fft/fft.c: 272,359 # fft definition.
+components/fft/fft.c: 139,162 # fft definition.

@@ -1,0 +1,33 @@
+{
+	"livein": ["x", "N", "N1", "N2"],
+	"liveout": [],
+	"returnvarname": ["returnv"],
+	"execcmd": "../benchmarks/Github/code/jtfell_c-fft_2/exec",
+	"funname": "FFT_GoodThomas",
+	"funargs": ["x", "N", "N1", "N2"],
+	"value_profiles": [
+		"../results/Github/jtfell_c-fft_2/value_profiles/64.json",
+		"../results/Github/jtfell_c-fft_2/value_profiles/128.json",
+		"../results/Github/jtfell_c-fft_2/value_profiles/256.json",
+		"../results/Github/jtfell_c-fft_2/value_profiles/512.json",
+		"../results/Github/jtfell_c-fft_2/value_profiles/1024.json"
+	],
+	"typemap": {
+		"x": "array(complex)",
+		"N": "int32",
+		"N1": "int32",
+		"N2": "int32",
+		"returnv": "array(complex)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/jtfell_c-fft_2/self_contained_code.c"],
+	"classmap": {
+		"complex": {
+			"type": "struct",
+			"symbols": ["re", "im"],
+			"typemap": {
+				"re": "float64",
+				"im": "float64"
+			}
+		}
+	}
+}

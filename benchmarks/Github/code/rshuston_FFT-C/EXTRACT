@@ -1,0 +1,7 @@
+INSERT: #define FFT_FORWARD 0 // Desugar enums
+INSERT: #define FFT_INVERSE 1
+SUBSTITUTE:fft_dir:int
+libcomplex/complex.h: 10,18 # complex def
+libcomplex/complex.h: 21,22 # complex mul defs
+libfft/fft.h: 18,32 # some defs
+libfft/fft.c: 3,204 # fft impl

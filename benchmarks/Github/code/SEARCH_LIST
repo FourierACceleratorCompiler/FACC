@@ -1,0 +1,153 @@
+https://github.com/FFTW/fftw3:Complex Code:Unsupported. Code too complex for me to find the correct structs --- expect them to be complicated however. (would only be valid in context.
+https://github.com/xiahouzuoxin/fft: Supported: --- Valid
+https://github.com/simonwunderlich/FFT_eval: Not 1D FFT:  --- NotFFT. Just a visualizer, doesn't execute any FFTs
+https://github.com/mborgerding/kissfft: Supported:  --- Valid. (Using the simple API.  Otherwise, may be valid in context.)
+https://github.com/alexbw/iPhoneFFT: Not C/C++: --- Not Valid --- I think this is in objective-C, but Valid-in-context Unlikely to be able to support out-of-context, and provides no tests that could be used as in-context references. (input sparsity).
+https://github.com/stg/SYLT-FFT: Fixed-Point FFT: --- Unsupported.  IntegerFFT, so may also have speedup/accuracy issues
+https://github.com/Lauszus/fftw3-android: Not 1D FFT: --- NotFFT. (Just an FFTW wrapper).
+https://github.com/jeremyfix/FFTConvolution: Not 1D FFT: --- Unsupported 2DFFT (For 2D) -- a wrapper around FFTW, but provides enough context for compilation.
+https://github.com/cpuimage/FFTResampler: Supported:  --- Valid.
+https://github.com/fakufaku/esp32-fft: Broken: --- Likely Valid.  Takes twiddle factors as input.  Interleaved input values. May be challenging.
+https://github.com/undees/fftw-example: Clone: --- Unsupported. Requires understanding FFTW structs --- provides enough context to execute if you do understand the FFTW structs however.
+https://github.com/JodiTheTigger/meow_fft: Supported: --- Valid.
+https://github.com/slowjud/FFT: Broken: --- Valid but has unknown header that I can't find.  Novel structure for storing inputs.
+https://github.com/extemporelang/kiss_fft: Clone: --- Clone of kissfft above.
+https://github.com/jtfell/c-fft: Supported: --- Valid for some functions.  Provides too much input sparsity on others.
+https://github.com/jtfell/c-fft: Supported: -- CooleyTukey
+https://github.com/jtfell/c-fft: Supported: --- GoodThomas
+https://github.com/adafruit/Adafruit_ZeroFFT: Fixed-Point FFT: --  Integer FFT
+https://github.com/FFmpeg/FFmpeg: Fixed-Point FFT: -- Valid after preprocessor generates the functions.
+https://github.com/Themaister/muFFT : Function Pointers: --- Valid.  In-context only, very complicated struct used as a plan.
+https://github.com/MrJBSwe/fft_lcd :Not 1D FFT: --- No implementation of an FFT.  Does call an FFT, but unclear where the source for that FFT is.
+https://github.com/BanTheRewind/Cinder-KissFft :Clone: --- Clone of KissFFT.
+https://github.com/cpmech/gosl :Not C/C++: --- Written in Go not C.
+https://github.com/swharden/FftSharp:Not C/C++: --- Written for .Net in C#
+https://github.com/ibireme/YYBenchmarkFFT:Not 1D FFT: --- This is a benchmark suite of other FFT implementations.
+https://github.com/KevZhuArt/FFT-FastLED: Fixed-Point FFT: --- Integer FFT
+https://github.com/swharden/FftSharp:Not C/C++: --- Written in C# I think.
+https://github.com/gpu-fftw/gpu_fftw :Architecture-Specific Code:--- Seems like it should work --- might need specialized hardware to run properly though.
+https://github.com/liscio/fft/ :Supported:--- Supported
+https://github.com/marton78/pffft :Supported:--- Supported in context
+https://github.com/SproutOrc/MSP430FFT : Broken: --- Only one length supported by the code
+https://github.com/madhurjain/audio-fft : Fixed-Point: --- Also a clone, just copy and paste Arm CMSIS
+https://github.com/barnex/fftw: Clone:  --- Also written in Go.
+https://github.com/godock/fftw-build : Clone: --- fftw again
+https://github.com/orhun/rtl_map : Not 1D FFT: --- not an fft
+https://github.com/dlinyj/fft : Supported: --- Requires profiling
+https://github.com/G6EJD/ESP32-8-Octave-Audio-Spectrum-Display : Not 1D FFT: --- Don't really know what this is.
+https://github.com/gregfjohnson/fft : Supported: --- Looks easy and clean :)
+https://github.com/cpuimage/fftResample : Clone : --- some other repo cloned.
+https://github.com/Stenzel/FFT4CM4F : Not C/C++ : --- Assembly, supported but not portable between targets to benchmark.
+https://github.com/calamitySoft/FFT-Listener: Integer FFT: ---- 
+https://github.com/amd/amd-fftw : Clone:
+https://github.com/xbarin02/uFFT : Supported: DIF
+https://github.com/xbarin02/uFFT : Supported: DIT
+https://github.com/EuphonistiHack/launchpad-freq-analyzer : Clone : Using ARM CMSIS
+https://github.com/tasimon/FFT: Supported: --- Note only supports length of 64.
+https://github.com/slosar/FFTLog: FFTLog: Implements the FFTLog algorithm, quite a cool one to be honest: https://jila.colorado.edu/~ajsh/FFTLog/
+https://github.com/ericlyon/pd-fftease: Supported: --- Looks easy to support
+https://github.com/adis300/fft-c: Support in Progress : I think this needs a conversion to/from a real-valued FFT
+https://github.com/simpleavr/lp_8bitfft: Fixed-Point FFT:  --- fixed point
+https://github.com/fdb/frequensea: Not 1D FFT: --- does call fftw, but I want this to focus on extracting FFT implementations from a benchmark suite
+https://github.com/yhzj/STM32-oscilloscope-with-FFT-: Clone: --- and has an assembly fft for good measure
+https://github.com/omnister/fftp: Supported: ---
+https://github.com/brendanashworth/fft-small: Not Supported: --- I don't understand how to create a benchmark from this, don't know what x is, but it looks data-dependent, which is a no-go.
+https://github.com/evan/fftw3 : Not C/C++:
+https://github.com/biotrump/OouraFFT/ : Supported:--- think it needs profiling
+https://github.com/MichalKarol/AudioFFT : Clone:
+https://github.com/XiuYuLi/xfft: Not C/C++: -- CUDA
+https://github.com/mgomes/ruby-fftw3: Not C/C++: --- Ruby
+https://github.com/BurntBrunch/rockbox-fft: : 
+https://github.com/cpuimage/StockhamFFT: Supported:
+https://github.com/pc2/fft3d-fpga: Not C/C++: --- OpenCL
+https://github.com/ashvinnihalani/Fixedpoint-FFT: Fixed-Point FFT:
+https://github.com/nickolanack/FFT-Audio-Analyzer: Not 1D FFT
+https://github.com/xfangcosmo/FFTLog-and-beyond: Not Supported: --- fftlog impl
+https://github.com/joaodias/DSP-Digital-Signal-Processing-: Supported:
+https://github.com/frederikhermans/js-kiss-fft2: Not C/C++:
+https://github.com/pd-projects/fftease: Clone:
+https://github.com/akw0088/fft/: Supported:
+https://github.com/lucidfrontier45/kiss_xcorr: Clone:
+https://github.com/rshuston/FFT-C: Supported: --- will need value profiles for length
+https://github.com/fabioaffinito/FFTXlib: Not C/C++:
+https://github.com/kappalabs/fft_band_equalizer/: Supported: --- see equalizer.c
+https://github.com/VatsalSy/gerris-fft-particles: Not 1D FFT:
+https://github.com/j-funk/fftw-js: Not C/C++:
+https://github.com/hosackm/FFT_Block: Not 1D FFT:
+https://github.com/Lichtso/CCWT: Not 1D FFT:
+https://github.com/IntelLabs/SOI_FFT/: Not Portable: POSIX-only.
+https://github.com/cpuimage/cpuFFT: Supported: I suppose this is like a meta-FFT?  Has a lot of different FFTs within it that are selected from depending on the input size.
+https://github.com/983/fft: Supported: --- requires value profiling
+https://github.com/sunnyks/FFT/: Work in-progress: Requires a strange lgnth variable.
+https://github.com/jjuiddong/OceanLightingFFT: Not C:
+https://github.com/PY1CX/Cortex-M-FFT: Clone: Benchmark of ARM CMSIS
+https://github.com/BradenHarrelson/FastFourierTransform: Supported: Only a single length, and it requires sub-function extraction.
+https://github.com/IntelPython/fft_benchmark: Not C/C++:
+https://github.com/colin-guyon/rpi-audio-levels: Not 1D FFT: Uses some GPU library, which I doubt would be portable anyway.
+https://github.com/Lichtso/VulkanFFT: Fixed-Point : 
+https://github.com/helloworldpark/wavelet-fft: Supported:
+https://github.com/SchofieChen/STM32_FFT: Not 1D FFT: Using CMSIS
+https://github.com/MangoTheCat/fftw3: Not C/C++:
+https://github.com/pradeepsinngh/fft-dft-opencl: Not C/C++:
+https://github.com/mozanunal/SimpleDSP: Supported: Looks only like lengths less than 64 are going to be accepted.
+https://github.com/seanlikeskites/atfft: Void* Pointers: --- and function pointers and lots of nasty profiling required.
+https://github.com/j-funk/js-dsp-test: Not C/C++:
+https://github.com/Underdisc/Water/: Not C:
+https://github.com/ericlyon/FFTease3.0-MaxMSP: Clone:
+https://github.com/ISI-apex/fft-ct: Maybe --- requires understanding the fftw structs (and also linking fftw on targets, which I think may not be portable)
+https://github.com/pyroesp/vitaFFT: Not 1D FFT: Uses some other libs
+https://github.com/SUMAN003/FPGAFFT: Clone: uses kiss fft
+https://github.com/hayguen/pocketfft: Not C:
+https://github.com/WangYooNestik/STM32F10X-ADC-FFT: Clone: Uses CMSIS
+https://github.com/ands/am_fft: Supported: Requires profiling
+https://github.com/krkrz/fftgraph: Clone: 
+https://github.com/stepin105296/N-Point_Fast_Fourier_Transform_Calculator: Supported: 
+https://github.com/ebragge/LibFFT: Clone: uses kiss
+https://github.com/paulreimer/ofxAudioFeatures: Not C:
+https://github.com/hg2ecz/ProgrammingLanguageBenchmark-FFT_4096: Not C:  A bit confusing looks like there might be a C one, under the label of an objective-C one.  Anyway, omitting on the grounds of no obvious C one.
+https://github.com/EE590-Spring2014/CSharpFFTW: Not C:
+https://github.com/Lendlav/stm8s103-FFT-spectrum: Fixed-Point: 
+https://github.com/Beatrice-Raws/FFTSpectrum/: Not 1D FFT: uses fftw
+https://github.com/ahmedlearns/vipcw-spectrogram: Not 1D FFT: uses fftw
+https://github.com/rec/gpu_fft_py: Not Portable: GPU implementaiton
+https://github.com/KalebKE/FFT_C/: May be supported: Only a single length at best though.
+https://github.com/tne-lab/OpenEphysFFTW: Not 1D FFT:
+https://github.com/shibatch/sleef: Supported: See src/dft/dft.c ---going to require some extensive value profiling.
+https://github.com/xhacks/sndfile2fft: Seems to use fftw:
+https://github.com/deepshikha-bansal/Vivado_HLS_1024_Point_FFT: Supported: only a single length though
+https://github.com/FFTW/benchfft: Not 1D FFT: the fftw benchmark suite
+https://github.com/karimnaaji/fft: Not 1D FFT: seems exclusively 2d benchmark
+https://github.com/pkestene/simpleFFTW: Not 1D FFT: FFTW benchmark instead
+https://github.com/headupinclouds/fft2d: Clone:
+https://github.com/liyinxin/FFT-STM32-F4: Clone: I think this is using the ArmCMSIS stuff
+https://github.com/aspotashev/fftw3-cmake: Clone:
+https://github.com/chlik/fft/ : Supported:
+https://github.com/adamski/audio_fft: Clone:
+https://github.com/y2kblog/NUCLEO-F411RE_PDM_SoftwareCICfilter: Not 1D FFT: Uses CMSIS
+https://github.com/wbhart/mpir-fft: Not Supported: Too complicated to support
+https://github.com/luczak-a/FFT-and-Welch-Method/: Supported: 
+https://github.com/duff2013/analyze_fft1024_fast: Fixed-Point:
+https://github.com/IamShubhamGupto/FFT-Noise: Not 1D FFT: I am like 99.99% sure this is a 2d fft
+https://github.com/oscgonfer/AudioI2S/: Not C:
+https://github.com/ian-bartholomew/Cinder-BeatFactory: Not 1D FFT: uses kiss calls
+https://github.com/Starlink/fftw: Clone:
+https://github.com/rockcarry/fftask: Not 1D FFT: Comments in not-english, so hard to tell, but looks like FF Task
+https://github.com/StylonWang/fft: Not 1D FFT: Uses FFTW
+https://github.com/Venetian/MayerFFT: Supported: Looks like it might only be for shorter lengths? not clear.
+https://github.com/r9y9/fft: Not C:
+https://github.com/kiranpradeep/vDSPxcorr2D: Not 1D FFT:
+https://github.com/ruby-numo/numo-fftw: Not C:
+https://github.com/rpep/cython-fftw: Not C:
+https://github.com/y2kblog/NUCLEO-L476RG_DFSDM_PDM-Mic: Using CMSIS:
+https://github.com/druid-3/RADIX4: Maybe: I am struggling to understand how to use the code.
+https://github.com/kevinacahalan/piano_waterfall: Not 1D FFT: uses fftw
+https://github.com/cbreeding/Polynomial_Multiplication: Supported: (see recursive_fft.c)
+https://github.com/CNMAT/fftw: Clone:
+https://github.com/mstop4/FMODGMS: Use: Uses FFTW
+https://github.com/hamsternz/my_fft: Supported: will need profiling
+https://github.com/luolongzhi/llz_fft: Supported: will need profiling, will also need in-function snipping.
+https://github.com/kalray/Benchmark_FFT: Supported: see src/cluster/fft_kernels.c
+https://github.com/biotrump/ffts-tec: Void Pointers:
+https://github.com/Sable/fft-benchmark/: Supported:
+https://github.com/gemarela/fft_openmp/: Escaping Side-Effects: 
+https://github.com/vidify/old-audiosync: Use: Uses FFTW

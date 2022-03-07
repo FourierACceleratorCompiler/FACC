@@ -1,0 +1,54 @@
+{
+	"livein": ["data", "in"],
+	"liveout": ["out"],
+	"execcmd": "../benchmarks/Github/code/JodiTheTigger_meow_fft/exec",
+	"funname": "meow_fft",
+	"funargs": ["data", "in", "out"],
+	"typemap": {
+		"data": "pointer(Meow_FFT_Workset)",
+		"in": "array(Meow_FFT_Complex)",
+		"out": "array(Meow_FFT_Complex)"
+	},
+	"required_includes": ["../../benchmarks/Github/code/JodiTheTigger_meow_fft/self_contained_code.c"],
+	"value_profiles": [
+		"../results/Github/JodiTheTigger_meow_fft/value_profiles/4.json",
+		"../results/Github/JodiTheTigger_meow_fft/value_profiles/8.json",
+		"../results/Github/JodiTheTigger_meow_fft/value_profiles/16.json",
+		"../results/Github/JodiTheTigger_meow_fft/value_profiles/32.json",
+		"../results/Github/JodiTheTigger_meow_fft/value_profiles/64.json",
+		"../results/Github/JodiTheTigger_meow_fft/value_profiles/128.json",
+		"../results/Github/JodiTheTigger_meow_fft/value_profiles/256.json",
+		"../results/Github/JodiTheTigger_meow_fft/value_profiles/512.json",
+		"../results/Github/JodiTheTigger_meow_fft/value_profiles/1024.json"
+	],
+	"classmap": {
+		"Meow_FFT_Complex": {
+			"type": "struct",
+			"symbols": ["r", "j"],
+			"typemap": {
+				"r": "float32",
+				"j": "float32"
+			}
+		},
+		"Meow_Fft_Stages": {
+			"type": "struct",
+			"symbols": ["count", "radix", "remainder", "offsets"],
+			"typemap": {
+				"count": "uint32",
+				"radix": "array(uint32)",
+				"remainder": "array(uint32)",
+				"offsets": "array(uint32)"
+			}
+		},
+		"Meow_FFT_Workset": {
+			"type": "struct",
+			"symbols": ["N", "wn", "wn_ordered", "stages"],
+			"typemap": {
+				"N": "int32",
+				"wn": "array(Meow_FFT_Complex#0)",
+				"wn_ordered": "array(Meow_FFT_Complex)",
+				"stages": "Meow_Fft_Stages"
+			}
+		}
+	}
+}

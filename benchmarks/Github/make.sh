@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Script to build all the wrappers in a mode for use with the synthesizer (not for benchmarking,
 # confusingly enough, see the results folder for that!)

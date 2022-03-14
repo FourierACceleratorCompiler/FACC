@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # given (a) a list of benchmarks, (b) a compile mode, and (c) a target apisspec, determine the compile time and place it in an output file.
 

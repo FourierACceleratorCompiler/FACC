@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # FFTW
 ./candidate_counts.sh ../benchmarks/Github/code/FINAL_LIST ../benchmarks/Accelerators/x86CompileSettings.json ../benchmarks/Accelerators/FFTW/FFTW_apispec.json

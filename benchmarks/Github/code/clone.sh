@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 for inffile in $(find -name INFO); do
 	pushd $(dirname $inffile)

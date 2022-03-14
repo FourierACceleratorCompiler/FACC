@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Biggest --- require a log axis.
 python3.9 plot_joint_graph.py all  Github/mborgerding_kissfft/Github/gregfjohnson_fft Github/cpuimage_cpuFFT/ Github/xbarin02_uFFT_2/ Github/MiBench_MiBench Github/liscio_fft Github/jtfell_c-fft
 

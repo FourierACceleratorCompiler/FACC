@@ -9,7 +9,7 @@ Requierments: Nix (see https://nixos.org/download.html)
 
 Building (in FACC folder):
 1. In top-level director, run `nix-shell`. This should fetch all dependencies
-2. Build FACC: `cd synth; make`
+2. Build FACC: `cd synth; make clean; make`
 3. Build the FACC libraries: `cd synth/libs/clib; make`
 4. Build the evaluation executables: `cd benchmarks/Github; ./make.sh`
 5. Run the value-profiling framework: `cd results; ./build.sh; ./generate.sh; ./run_value_profiling.sh`

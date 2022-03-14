@@ -10,7 +10,7 @@ Requirements: Nix. (see https://nixos.org/download.html)
 
 Building:
 - In the top-level directory, run `nix-shell`.  This should fetch all the dependencies.
-- Build FACC: cd synth; make
+- Build FACC: cd synth; make clean; make
 - Build the FACC libraries: cd synth/libs/clib/; make
 - [optional] Build the evaluation executables: cd benchmarks/Github; ./make.sh
 

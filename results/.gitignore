@@ -3,7 +3,6 @@ barplot_speedup.eps
 *.jpg
 */*/inputs/*.json
 */*/accelerated_fftw
-*/*/accelerated_fftw.cpp
 */*/tmpout
 */*/original
 */*/value_profiler

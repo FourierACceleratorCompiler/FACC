@@ -3,6 +3,7 @@
 with pkgs;
 mkShell {
 	buildInputs = [
+		bash ncurses
 		cloc ocaml gdb valgrind splint linuxPackages-libre.perf gnumake ctags bc
 		# Ocaml packages
 		ocamlPackages.findlib ocamlPackages.ocamlbuild ocamlPackages.yojson
